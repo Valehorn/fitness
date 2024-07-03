@@ -131,6 +131,8 @@
     <section class="juri" data-test="juri">
       <h2 class="jury__title">Жюри</h2>
       <!-- Слайдер жюри -->
+      <button class="juri__button juri__button--back" type="button"><span class="visually-hidden">Кнопка слайдера жюри назад</span></button>
+      <button class="juri__button juri__button--next" type="button"><span class="visually-hidden">Кнопка слайдера жюри вперед</span></button>
       <ol class="juri__list">
         <li class="juri__item">
           <article class="jury__card">
@@ -328,6 +330,31 @@
           </details>
         </li>
       </ul>
+    </section>
+    <section class="reviews" data-test="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <button class="reviews__button reviews__button--back" type="button"><span class="visually-hidden">Кнопка слайдера отзывов назад</span></button>
+      <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Кнопка слайдера отзывов вперед</span></button>
+      <article class="reviews__card">
+        <div class="reviews__card-image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260" height="300">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
+            <img src="#" alt="Фотография клиента." width="68" height="68">
+          </picture>
+        </div>
+        <h3>Анна Орлова</h3>
+        <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+          дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+      </article>
     </section>
   </main>
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
