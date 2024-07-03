@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-    <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+</head>
 
-  <body class="page-body">
-    <main class="page-main">
-      <section class="hero">
-        <h2 class="visually-hidden">Блок промо</h2>
-        <header class="header">
-          <img class="logo" src="#" alt="Фитнес Центр Омск" width="100" height="20">
-          <a class="header__phone-link" href="#">8 800 555-55-55</a>
-        </header>
-        <section class="hero-group">
-          <ul class="hero-group__description-list">
-            <li class="hero-group__description">Тренажерный зал</li>
-            <li class="hero-group__description">Групповые занятия</li>
-            <li class="hero-group__description">Кардио-зона</li>
-          </ul>
-          <h2 class="hero-group__subtitle">Омск</h2>
-          <h1 class="hero-group__title">Фитнес Центр</h1>
-          <a class="button" href="#">Купить абонемент</a>
-          <img class="hero-group__image" src="#" alt="Наш тренер супермен" width="324" height="390">
-        </section>
+<body class="page-body">
+  <main class="page-main">
+    <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Блок промо</h2>
+      <header class="header">
+        <img class="logo" src="#" alt="Фитнес Центр Омск" width="100" height="20">
+        <a class="header__phone-link" href="#">8 800 555-55-55</a>
+      </header>
+      <section class="hero-group">
+        <ul class="hero-group__description-list">
+          <li class="hero-group__description">Тренажерный зал</li>
+          <li class="hero-group__description">Групповые занятия</li>
+          <li class="hero-group__description">Кардио-зона</li>
+        </ul>
+        <h2 class="hero-group__subtitle">Омск</h2>
+        <h1 class="hero-group__title">Фитнес Центр</h1>
+        <a class="button" href="#">Купить абонемент</a>
+        <img class="hero-group__image" src="#" alt="Наш тренер супермен" width="324" height="390">
       </section>
-    </main>
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    </section>
+    <section class="about" data-test="about">
+      <h2 class="about__title">Тренажерный зал</h2>
+      <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
+      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+        зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <img class="about__image" src="#" alt="Тренажерный зал" width="320" height="380">
+        <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0" width="320" height="170" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
@@ -46,7 +56,7 @@
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
-    <script type="module" src="js/main.js"></script>
-  </body>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
