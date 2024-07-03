@@ -29,11 +29,11 @@
         </ul>
         <h3 class="hero-group__subtitle">Омск</h3>
         <h2 class="hero-group__title">Фитнес Центр</h2>
-        <a class="button" href="#">Купить абонемент</a>
+        <a class="button hero-group__button" href="#price">Купить абонемент</a>
         <img class="hero-group__image" src="#" alt="Наш тренер супермен" width="324" height="390">
       </section>
     </section>
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <h2 class="about__title">Тренажерный зал</h2>
       <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
       <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
@@ -54,7 +54,7 @@
       <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
         allowfullscreen="" loading="lazy"></iframe>
     </section>
-    <section class="price" data-test="price">
+    <section class="price" data-test="price" id="price">
       <h2 class="price__title">Абонементы</h2>
       <ul class="price__tab-list">
         <li class="price__tab-item">1 месяц</li>
@@ -67,7 +67,7 @@
             <h3 class="card__title">С тренером</h3>
             <p class="card__count">12 занятий</p>
             <p class="card__price">
-              <span class="card__price-text">5000</span>&#8381;
+              <span class="card__price-text">5000</span>&nbsp; &#8381;
               <button class="button card__button" type="button">Купить абонемент</button>
             </p>
           </article>
@@ -77,7 +77,7 @@
             <h3 class="card__title">Дневной</h3>
             <p class="card__count">с 8:00 до 17:00</p>
             <p class="card__price">
-              <span class="card__price-text">1700</span>&#8381;
+              <span class="card__price-text">1700</span>&nbsp; &#8381;
               <button class="button card__button" type="button">Купить абонемент</button>
             </p>
           </article>
@@ -87,7 +87,7 @@
             <h3 class="card__title">Полный день</h3>
             <p class="card__count">с 8:00 до 22:00</p>
             <p class="card__price">
-              <span class="card__price-text">2700</span>&#8381;
+              <span class="card__price-text">2700</span>&nbsp; &#8381;
               <button class="button card__button" type="button">Купить абонемент</button>
             </p>
           </article>
@@ -105,7 +105,7 @@
       </ul> -->
     </section>
     <section class="games" data-test="games">
-      <h2 class="game__title">Super Games</h2>
+      <h2 class="games__title">Super Games</h2>
       <dl class="games__list">
         <dt class="games__list-title">Дата</dt>
         <dd class="games__list-description">7 Марта 2019</dd>
@@ -128,8 +128,8 @@
         <img class="games__image" src="#" alt="Любитель экстремальной зимней рыбалки" width="290" height="290">
       </picture>
     </section>
-    <section class="juri" data-test="juri">
-      <h2 class="jury__title">Жюри</h2>
+    <section class="juri" data-test="juri" id="juri">
+      <h2 class="juri__title">Жюри</h2>
       <!-- Слайдер жюри -->
       <button class="juri__button juri__button--back" type="button"><span class="visually-hidden">Кнопка слайдера жюри
           назад</span></button>
@@ -137,9 +137,9 @@
           вперед</span></button>
       <ol class="juri__list">
         <li class="juri__item">
-          <article class="jury__card">
+          <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="jury__image">
+            <figure class="juri__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1220px)"
                   srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
@@ -152,16 +152,16 @@
                   srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="games__image" src="#" alt="Фотография тренера" width="260" height="300">
+                <img class="juri__image" src="#" alt="Фотография тренера" width="260" height="300">
               </picture>
-              <figcaption class="jury__name">Анна Павлова</figcaption>
+              <figcaption class="juri__name">Анна Павлова</figcaption>
             </figure>
           </article>
         </li>
         <li class="juri__item">
-          <article class="jury__card">
+          <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="jury__image">
+            <figure class="juri__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1220px)"
                   srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
@@ -174,16 +174,16 @@
                   srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="games__image" src="#" alt="Фотография тренера" width="260" height="300">
+                <img class="juri__image" src="#" alt="Фотография тренера" width="260" height="300">
               </picture>
-              <figcaption class="jury__name">Алексей Лавров</figcaption>
+              <figcaption class="juri__name">Алексей Лавров</figcaption>
             </figure>
           </article>
         </li>
         <li class="juri__item">
-          <article class="jury__card">
+          <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="jury__image">
+            <figure class="juri__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1220px)"
                   srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
@@ -196,16 +196,16 @@
                   srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="games__image" src="#" alt="Фотография тренера" width="260" height="300">
+                <img class="juri__image" src="#" alt="Фотография тренера" width="260" height="300">
               </picture>
-              <figcaption class="jury__name">Александр Пашков</figcaption>
+              <figcaption class="juri__name">Александр Пашков</figcaption>
             </figure>
           </article>
         </li>
         <li class="juri__item">
-          <article class="jury__card">
+          <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="jury__image">
+            <figure class="juri__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1220px)"
                   srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
@@ -218,9 +218,9 @@
                   srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="games__image" src="#" alt="Фотография тренера" width="260" height="300">
+                <img class="juri__image" src="#" alt="Фотография тренера" width="260" height="300">
               </picture>
-              <figcaption class="jury__name">Мария Кетова</figcaption>
+              <figcaption class="juri__name">Мария Кетова</figcaption>
             </figure>
           </article>
         </li>
@@ -255,10 +255,10 @@
         </li>
       </ul>
     </section>
-    <section class="offers" data-test="offers">
+    <section class="offers" data-test="offers" id="offers">
       <h2 class="offers__title">Акции</h2>
       <div class="offers__card offers__card-main">
-        <h3>Год<span>4999</span></h3>
+        <h3>Год <span>4999</span></h3>
         <p>Безлимитный абонемент в тренажёрный зал</p>
         <picture>
           <source type="image/webp" media="(min-width: 1220px)"
@@ -271,7 +271,7 @@
             srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-          <img class="games__image" src="#" alt="Фотография тренера" width="320" height="360">
+          <img class="offers__image" src="#" alt="Фотография тренера" width="320" height="360">
         </picture>
         <a class="offers__card-link offers__card-link--main" href="#">Подробнее</a>
       </div>
@@ -370,7 +370,7 @@
           <label class="visually-hidden" for="phone">Телефон</label>
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
             pattern="^[^а-яА-Яa-zA-Z]+$" required>
-          <button class="button from__button" type="submit">Отправить</button>
+          <button class="button form__button" type="submit">Отправить</button>
         </form>
       </section>
       <section class="contacts">
@@ -388,10 +388,53 @@
             <h3 class="contacts__item-title">Телефон</h3>
             <a class="contacts__item-description" href="tel:88005555555">8 800 555-55-55</a>
           </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Email</h3>
+            <a class="contacts__item-description" href="email:oмск@supergym.ru">oмск@supergym.ru</a>
+          </li>
         </ul>
       </section>
     </div>
   </main>
+  <footer class="footer">
+    <img class="logo" src="#" alt="Фитнес Центр Омск" width="100" height="20">
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#about">Услуги</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#price">Абонементы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#offers">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#juri">Тренеры</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="#">Расписание</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--vk" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--classmates" href="#">
+          <span class="visually-hidden">Одноклассники</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--discord" href="#">
+          <span class="visually-hidden">Дискорд</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
