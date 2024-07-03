@@ -37,8 +37,71 @@
       <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
       <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
         зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 1220px)"
+          srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/png" media="(min-width: 1220px)"
+          srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width: 768px)"
+          srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+        <source type="image/webp" media="(max-width: 767px)"
+          srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
         <img class="about__image" src="#" alt="Тренажерный зал" width="320" height="380">
-        <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0" width="320" height="170" allowfullscreen="" loading="lazy"></iframe>
+      </picture>
+      <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" frameborder="0" width="320"
+        height="170" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="price">
+      <h2 class="price__title">Абонементы</h2>
+      <ul class="price__tab-list">
+        <li class="price__tab-item">1 месяц</li>
+        <li class="price__tab-item">6 месяцев</li>
+        <li class="price__tab-item">12 месяцев</li>
+      </ul>
+      <ul class="price__cards-list-one-month">
+        <li class="price__cards-item card">
+          <article class="card">
+            <h3 class="card__title">С тренером</h3>
+            <p class="card__count">12 занятий</p>
+            <p class="card__price">
+              <span class="card__price-text">5000</span>&#8381;
+              <button class="button card__button" type="button">Купить абонемент</button>
+            </p>
+          </article>
+        </li>
+        <li class="price__cards-item card">
+          <article class="card">
+            <h3 class="card__title">Дневной</h3>
+            <p class="card__count">с 8:00 до 17:00</p>
+            <p class="card__price">
+              <span class="card__price-text">1700</span>&#8381;
+              <button class="button card__button" type="button">Купить абонемент</button>
+            </p>
+          </article>
+        </li>
+        <li class="price__cards-item card">
+          <article class="card">
+            <h3 class="card__title">Полный день</h3>
+            <p class="card__count">с 8:00 до 22:00</p>
+            <p class="card__price">
+              <span class="card__price-text">2700</span>&#8381;
+              <button class="button card__button" type="button">Купить абонемент</button>
+            </p>
+          </article>
+        </li>
+      </ul>
+      <!-- <ul class="price__cards-list-six-months">
+        <li class="price__cards-item card"></li>
+        <li class="price__cards-item card"></li>
+        <li class="price__cards-item card"></li>
+      </ul>
+      <ul class="price__cards-list-twelve-months">
+        <li class="price__cards-item card"></li>
+        <li class="price__cards-item card"></li>
+        <li class="price__cards-item card"></li>
+      </ul> -->
     </section>
   </main>
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
