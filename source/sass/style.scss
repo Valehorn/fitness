@@ -4,10 +4,10 @@
 @import "global/fonts";
 @import "global/visually-hidden";
 @import "global/global";
+@import "global/title";
 
 /* Блоки */
 @import "blocks/button";
-@import "blocks/title";
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/hero";
@@ -15,6 +15,7 @@
 @import "blocks/price";
 @import "blocks/card";
 @import "blocks/games";
+@import "blocks/juri";
 
 /* Vendor */
 @import "vendor/normalize";
