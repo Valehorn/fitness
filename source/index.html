@@ -27,9 +27,9 @@
           <li class="hero__group-description">Групповые занятия</li>
           <li class="hero__group-description">Кардио-зона</li>
         </ul>
-        <h3 class="hero__group-subtitle">Омск</h3>
+        <h3 class="hero__group-subtitle title">Омск</h3>
         <h2 class="hero__group-title">Фитнес Центр</h2>
-        <a class="button hero__group-button" href="#price">Купить абонемент</a>
+        <a class="button hero__group-button button--primary" href="#price">Купить абонемент</a>
         <picture>
           <source type="image/webp" media="(min-width: 1220px)"
             srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
@@ -46,12 +46,14 @@
       </section>
     </section>
     <section class="about" data-test="about" id="about">
-      <h2 class="about__title">Тренажёрный зал</h2>
+      <h2 class="about__title title">Тренажёрный зал</h2>
       <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
       <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
         зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
       <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
         есть несколько оборудованных залов для различных видов групповых занятий.</p>
+
+        <!-- Скорее всего для блока с картинкой и iframe придется делать display: contents; -->
       <picture>
         <source type="image/webp" media="(min-width: 1220px)"
           srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
@@ -63,13 +65,31 @@
           srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
         <source type="image/webp" media="(max-width: 767px)"
           srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
-        <img class="about__image" src="#" alt="Тренажерный зал" width="320" height="380">
+        <img class="about__image" src="#" alt="Тренажерный зал" width="320" height="280">
       </picture>
+      <div class="about__video-plug">
+        <picture>
+          <source type="image/webp" media="(min-width: 1220px)"
+            srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 1220px)"
+            srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
+          <img class="about__video-image" src="#" alt="Картинка перед видео" width="320" height="280">
+        </picture>
+        <button class="about__button-play" type="button">
+          <span class="visually-hidden">Кнопка проигрывателя.</span>
+        </button>
+      </div>
       <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
         allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
     </section>
     <section class="price" data-test="price" id="price">
-      <h2 class="price__title">Абонементы</h2>
+      <h2 class="price__title title">Абонементы</h2>
       <ul class="price__tab-list">
         <li class="price__tab-item">1 месяц</li>
         <li class="price__tab-item">6 месяцев</li>
@@ -81,8 +101,9 @@
             <h3 class="card__title">С тренером</h3>
             <p class="card__count">12 занятий</p>
             <p class="card__price">
-              <span class="card__price-text">5000</span>&nbsp; &#8381;
-              <button class="button card__button" type="button">Купить абонемент</button>
+              <span class="card__price-text">5000</span>&nbsp; <span class="card__price-unit">&#8381;
+              </span>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </p>
           </article>
         </li>
@@ -91,8 +112,9 @@
             <h3 class="card__title">Дневной</h3>
             <p class="card__count">с 8:00 до 17:00</p>
             <p class="card__price">
-              <span class="card__price-text">1700</span>&nbsp; &#8381;
-              <button class="button card__button" type="button">Купить абонемент</button>
+              <span class="card__price-text">1700</span>&nbsp; <span class="card__price-unit">&#8381;
+              </span>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </p>
           </article>
         </li>
@@ -101,8 +123,9 @@
             <h3 class="card__title">Полный день</h3>
             <p class="card__count">с 8:00 до 22:00</p>
             <p class="card__price">
-              <span class="card__price-text">2700</span>&nbsp; &#8381;
-              <button class="button card__button" type="button">Купить абонемент</button>
+              <span class="card__price-text">2700</span>&nbsp; <span class="card__price-unit">&#8381;
+              </span>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </p>
           </article>
         </li>
@@ -127,7 +150,7 @@
         <dd class="games__list-description">12:00</dd>
       </dl>
       <p class="games__description">Ежегодные соревнования по CrossFit</p>
-      <a class="button games__button" href="#">Заполнить заявку</a>
+      <a class="button games__button button--primary" href="#">Заполнить заявку</a>
       <picture>
         <source type="image/webp" media="(min-width: 1220px)"
           srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
@@ -143,7 +166,7 @@
       </picture>
     </section>
     <section class="juri" data-test="juri" id="juri">
-      <h2 class="juri__title">Жюри</h2>
+      <h2 class="juri__title title">Жюри</h2>
       <!-- Слайдер жюри -->
       <button class="juri__button juri__button--back" type="button"><span class="visually-hidden">Кнопка слайдера жюри
           назад</span></button>
@@ -241,7 +264,7 @@
       </ol>
     </section>
     <section class="features" data-test="features">
-      <h2 class="features__title">Наши преимущества</h2>
+      <h2 class="features__title title">Наши преимущества</h2>
       <ul class="features__list">
         <li>
           <p><span>900</span>кв/м</p>
@@ -270,7 +293,7 @@
       </ul>
     </section>
     <section class="offers" data-test="offers" id="offers">
-      <h2 class="offers__title">Акции</h2>
+      <h2 class="offers__title title">Акции</h2>
       <div class="offers__card offers__card-main">
         <h3>Год <span>4999</span></h3>
         <p>Безлимитный абонемент в тренажёрный зал</p>
@@ -303,7 +326,7 @@
       </ul>
     </section>
     <section class="faq" data-test="faq">
-      <h2 class="faq__title">Вопросы и ответы</h2>
+      <h2 class="faq__title title">Вопросы и ответы</h2>
       <ul class="faq__tab-list">
         <li class="faq__tab-item faq__tab-item--active">
           <button class="button" type="button">Цетр</button>
@@ -348,7 +371,7 @@
       </ul>
     </section>
     <section class="reviews" data-test="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+      <h2 class="reviews__title title">Отзывы</h2>
       <button class="reviews__button reviews__button--back" type="button"><span class="visually-hidden">Кнопка слайдера
           отзывов назад</span></button>
       <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Кнопка слайдера
@@ -376,7 +399,7 @@
     </section>
     <div class="form-contacts-desktop-wrapper">
       <section class="form" data-test="form">
-        <h2 class="form__title">Бесплатное занятие</h2>
+        <h2 class="form__title title">Бесплатное занятие</h2>
         <form class="form__free" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="name">Имя</label>
           <input class="form__input" type="text" name="name" id="name" placeholder="Имя" pattern="^[А-Яа-яa-zA-Z\s]+$"
@@ -388,7 +411,7 @@
         </form>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+        <h2 class="contacts__title title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__item-title">Адрес:</h3>

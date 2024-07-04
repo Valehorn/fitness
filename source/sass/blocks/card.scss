@@ -1,0 +1,58 @@
+@use "../global/variables.scss";
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.card__count {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.card__price {
+  margin: 0;
+}
+
+.card__price-text {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: $text-additional-accent-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 90px;
+  }
+}
+
+.card__price-unit {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 90px;
+  }
+}
+
+.card__button {
+  min-height: 66px;
+}

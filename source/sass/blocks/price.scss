@@ -1,0 +1,38 @@
+@use "../global/variables.scss";
+
+.price {
+  background-color: $bg-additional-color;
+}
+
+.price__tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price__tab-item {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.price__tab-item--current {
+  color: $primary-dark-color;
+}
+
+.price__cards-list-one-month {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

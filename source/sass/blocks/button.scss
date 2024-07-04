@@ -5,11 +5,24 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
+  background-color: transparent;
   border: 2px solid transparent;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 22px;
+  user-select: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.button--primary {
+  color: $primary-white-color;
+  border-color: $primary-white-color;
+  padding: 22px;
+}
+
+.button-secondary {
+  color: $primary-dark-color;
+  border-color: $primary-dark-color;
+  padding: 25px 22px;
 }
