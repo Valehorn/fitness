@@ -1,5 +1,9 @@
 @use "../global/variables.scss";
 
+.card {
+  background-color: $primary-white-color;
+}
+
 .card__title {
   font-weight: 700;
   font-size: 22px;
