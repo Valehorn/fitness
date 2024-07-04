@@ -1,3 +1,15 @@
+/* Global */
 @import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/visually-hidden";
 @import "global/global";
+
+/* Блоки */
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/hero";
+
+/* Vendor */
 @import "vendor/normalize";
