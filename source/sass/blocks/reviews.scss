@@ -1,0 +1,26 @@
+@use "../global/variables";
+
+.reviews {
+  background-color: $primary-dark-blue-color;
+  color: $primary-white-color;
+}
+
+.reviews__button {
+  @media (max-width: $pre-tablet-width) {
+    display: none;
+  }
+}
+
+.reviews__card {
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

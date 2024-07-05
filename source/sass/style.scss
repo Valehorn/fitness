@@ -4,10 +4,10 @@
 @import "global/fonts";
 @import "global/visually-hidden";
 @import "global/global";
+@import "global/button";
 @import "global/title";
 
 /* Блоки */
-@import "blocks/button";
 @import "blocks/details-link";
 @import "blocks/header";
 @import "blocks/logo";
@@ -19,6 +19,8 @@
 @import "blocks/juri";
 @import "blocks/features";
 @import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/reviews";
 
 /* Vendor */
 @import "vendor/normalize";
