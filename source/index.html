@@ -296,9 +296,12 @@
     </section>
     <section class="offers" data-test="offers" id="offers">
       <h2 class="offers__title title">Акции</h2>
-      <div class="offers__card offers__card-main">
+      <div class="offers__card">
         <h3>Год <span>4999</span></h3>
         <p>Безлимитный абонемент в тренажёрный зал</p>
+        <a class="offers__card-link details-link details-link--primary" href="#">Подробнее</a>
+      </div>
+      <div class="offers__image-container">
         <picture>
           <source type="image/webp" media="(min-width: 1220px)"
             srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260" height="300">
@@ -310,20 +313,19 @@
             srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-          <img class="offers__image" src="#" alt="Фотография тренера" width="320" height="360">
+          <img class="offers__image" src="#" alt="Фотография женщины на фоне неба" width="320" height="360">
         </picture>
-        <a class="offers__card-link offers__card-link--main" href="#">Подробнее</a>
       </div>
       <ul class="offers__list">
         <li class="offers__item">
           <h3>Месяц бесплатно</h3>
           <p>Приведи друга, получи абонемент в подарок</p>
-          <a class="offers__card-link" href="#">Подробнее</a>
+          <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
         </li>
         <li class="offers__item">
           <h3>Скидка 20%</h3>
           <p>Корпоративный фитнес с командой</p>
-          <a class="offers__card-link" href="#">Подробнее</a>
+          <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
         </li>
       </ul>
     </section>
