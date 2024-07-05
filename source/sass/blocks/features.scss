@@ -1,0 +1,83 @@
+@use "../global/variables";
+
+.features {
+  background-color: $bg-additional-color;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  li:not(:nth-of-type(3)) span {
+    background: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  span:first-of-type {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  span:last-of-type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  li:nth-of-type(3) {
+    background-color: $primary-dark-blue-color;
+    color: $primary-white-color;
+  }
+
+  li:nth-of-type(3) span:nth-of-type(2) {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+  @media (min-width: $tablet-width) {
+    h3 {
+      font-size: 20px;
+    }
+
+    span:first-of-type {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    span:last-of-type {
+      line-height: 22px;
+    }
+
+    li:nth-of-type(3) span:nth-of-type(2) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    h3 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    li:nth-of-type(3) span:nth-of-type(2) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
