@@ -1,0 +1,22 @@
+@use "../global/variables";
+
+.footer {
+  background-color: $bg-footer-black-color;
+  color: $primary-white-color;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+  color: $primary-white-color;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
