@@ -1,0 +1,32 @@
+@use "../global/variables";
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.contacts__item-description {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $primary-dark-color;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
