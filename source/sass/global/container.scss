@@ -19,3 +19,15 @@
     max-width: $desktop-width-container;
   }
 }
+
+.container--phone-none {
+  @media (max-width: $pre-tablet-width) {
+    display: contents;
+  }
+}
+
+.container--tablet-none {
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+}

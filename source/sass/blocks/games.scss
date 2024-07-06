@@ -1,8 +1,11 @@
 @use "../global/variables.scss";
 
 .games {
-  background-color: $bg-banners-color;
   color: $primary-white-color;
+}
+
+.games__wrapper {
+  background-color: $bg-banners-color;
 }
 
 .games__title {

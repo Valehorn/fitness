@@ -92,6 +92,7 @@
   border-radius: 100%;
   background-image: linear-gradient(to right, #ed0233 0%, #003eb7 80%, #003eb7 100%);
   border: none;
+  cursor: pointer;
 
   &::after {
     position: absolute;
