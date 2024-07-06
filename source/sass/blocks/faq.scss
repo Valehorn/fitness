@@ -33,7 +33,7 @@
 .faq__tab-button--active {
   background-image: linear-gradient(to right, #ed0233 20%, #003eb7 78%);
   color: $primary-white-color;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .faq__details-list {

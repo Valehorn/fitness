@@ -39,7 +39,8 @@
             srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
           <source type="image/jpeg" media="(min-width: 768px)"
             srcset="img/hero/hero-tablet@1x.jpg 1x, img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
-          <img class="hero__group-image" src="img/hero/hero-img.jpg" alt="Наш тренер супермен." width="324" height="390">
+          <img class="hero__group-image" src="img/hero/hero-tablet@1x.jpg" alt="Наш тренер супермен." width="324"
+            height="390">
         </picture>
       </section>
     </section>
@@ -53,38 +54,56 @@
 
       <!-- Скорее всего для блока с картинкой и iframe придется делать display: contents; -->
       <picture>
-        <source type="image/webp" media="(min-width: 1220px)"
-          srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x" width="660"
+          height="400">
         <source type="image/webp" media="(min-width: 768px)"
-          srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
-        <source type="image/png" media="(min-width: 1220px)"
-          srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
-        <source type="image/png" media="(min-width: 768px)"
-          srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+          srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x" width="678"
+          height="345">
+        <source type="image/jpeg" media="(min-width: 1366px)"
+          srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x" width="660"
+          height="400">
+        <source type="image/jpeg" media="(min-width: 768px)"
+          srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x" width="678"
+          height="345">
         <source type="image/webp" media="(max-width: 767px)"
-          srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
-        <img class="about__image" src="#" alt="Тренажерный зал." width="320" height="280">
+          srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x" width="320"
+          height="280">
+        <img class="about__image" src="img/about/about-main-img-phone@1x.jpg" alt="Тренажерный зал." width="320"
+          height="280">
       </picture>
-      <div class="about__video-plug">
-        <picture>
-          <source type="image/webp" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
-          <source type="image/png" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
-          <img class="about__video-image" src="#" alt="Картинка перед видео." width="320" height="280">
-        </picture>
-        <button class="about__button-play" type="button">
-          <span class="visually-hidden">Кнопка проигрывателя.</span>
-        </button>
+      <div class="about__video-container">
+        <div class="about__video-plug">
+          <div class="about__video-plug-image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/about/about-video-desktop@1x.webp 1x, img/about/about-video-desktop@2x.webp 2x" width="360"
+                height="230">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/about/about-video-tablet@1x.webp 1x, img/about/about-video-tablet@2x.webp 2x" width="270"
+                height="170">
+              <source type="image/png" media="(min-width: 1366px)"
+                srcset="img/about/about-video-desktop@1x.png 1x, img/about/about-video-desktop@2x.png 2x" width="360"
+                height="230">
+              <source type="image/png" media="(min-width: 768px)"
+                srcset="img/about/about-video-tablet@1x.png 1x, img/about/about-video-tablet@2x.png 2x" width="270"
+                height="170">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/about/about-video-phone@1x.webp 1x, img/about/about-video-phone@2x.webp 2x" width="320"
+                height="362">
+              <img class="about__video-image" src="img/about/about-video-phone@1x.png" alt="Картинка перед видео."
+                width="320" height="170">
+            </picture>
+          </div>
+          <div class="about__button-play-container">
+            <button class="about__button-play" type="button">
+              <span class="visually-hidden">Кнопка проигрывателя.</span>
+            </button>
+          </div>
+        </div>
+        <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
+          allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
       </div>
-      <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
-        allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
     </section>
     <section class="price" data-test="price" id="price">
       <h2 class="price__title title">Абонементы</h2>
@@ -152,17 +171,17 @@
       <p class="games__description">Ежегодные соревнования по CrossFit</p>
       <a class="button games__button button--primary" href="#">Заполнить заявку</a>
       <picture>
-        <source type="image/webp" media="(min-width: 1220px)"
-          srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500">
         <source type="image/webp" media="(min-width: 768px)"
-          srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
-        <source type="image/png" media="(min-width: 1220px)"
-          srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
-        <source type="image/png" media="(min-width: 768px)"
-          srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+          srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348">
+        <source type="image/jpeg" media="(min-width: 1366px)"
+          srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x" width="660" height="500">
+        <source type="image/jpeg" media="(min-width: 768px)"
+          srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348">
         <source type="image/webp" media="(max-width: 767px)"
-          srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
-        <img class="games__image" src="#" alt="Любитель экстремальной зимней рыбалки." width="290" height="290">
+          srcset="img/games/games-phone@1x.webp 1x, img/games/games-phone@2x.webp 2x" width="290" height="290">
+        <img class="games__image" src="img/games/games-phone@1x.jpg" alt="Любитель экстремальной зимней рыбалки." width="290" height="290">
       </picture>
     </section>
     <section class="juri" data-test="juri" id="juri">
@@ -178,18 +197,11 @@
             <h2 class="visually-hidden">Карточка жюри</h2>
             <figure class="juri__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
-                  height="300">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="juri__image" src="#" alt="Фотография тренера." width="260" height="300">
+                <source type="image/webp" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-1@1x.webp 1x, img/juri/card-1@2x.webp 2x" width="260" height="300">
+                <source type="image/jpeg" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-1@1x.jpg 1x, img/juri/card-1@2x.jpg 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri/card-1@1x.jpg" alt="Фотография тренера." width="260" height="300">
               </picture>
               <figcaption class="juri__name">Анна Павлова</figcaption>
             </figure>
@@ -200,18 +212,11 @@
             <h2 class="visually-hidden">Карточка жюри</h2>
             <figure class="juri__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
-                  height="300">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="juri__image" src="#" alt="Фотография тренера." width="260" height="300">
+                <source type="image/webp" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-2@1x.webp 1x, img/juri/card-2@2x.webp 2x" width="260" height="300">
+                <source type="image/jpeg" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-2@1x.jpg 1x, img/juri/card-2@2x.jpg 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri/card-2@1x.jpg" alt="Фотография тренера." width="260" height="300">
               </picture>
               <figcaption class="juri__name">Алексей Лавров</figcaption>
             </figure>
@@ -222,18 +227,11 @@
             <h2 class="visually-hidden">Карточка жюри</h2>
             <figure class="juri__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
-                  height="300">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="juri__image" src="#" alt="Фотография тренера." width="260" height="300">
+                <source type="image/webp" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-3@1x.webp 1x, img/juri/card-3@2x.webp 2x" width="260" height="300">
+                <source type="image/jpeg" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-3@1x.jpg 1x, img/juri/card-3@2x.jpg 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri/card-3@1x.jpg" alt="Фотография тренера." width="260" height="300">
               </picture>
               <figcaption class="juri__name">Александр Пашков</figcaption>
             </figure>
@@ -244,18 +242,11 @@
             <h2 class="visually-hidden">Карточка жюри</h2>
             <figure class="juri__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260"
-                  height="300">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-                <img class="juri__image" src="#" alt="Фотография тренера." width="260" height="300">
+                <source type="image/webp" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-4@1x.webp 1x, img/juri/card-4@2x.webp 2x" width="260" height="300">
+                <source type="image/jpeg" media="(max-resolution: 2dppx)"
+                  srcset="img/juri/card-4@1x.jpg 1x, img/juri/card-4@2x.jpg 2x" width="260" height="300">
+                <img class="juri__image" src="img/juri/card-4@1x.jpg" alt="Фотография тренера." width="260" height="300">
               </picture>
               <figcaption class="juri__name">Мария Кетова</figcaption>
             </figure>
@@ -301,17 +292,17 @@
       </div>
       <div class="offers__image-container">
         <picture>
-          <source type="image/webp" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260" height="300">
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@1x.webp 2x" width="280" height="460">
           <source type="image/webp" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-          <source type="image/png" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
+            srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400" height="462">
+          <source type="image/jpeg" media="(min-width: 1366px)"
+            srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.png 2x" width="280" height="460">
+          <source type="image/jpeg" media="(min-width: 768px)"
+            srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462">
           <source type="image/webp" media="(max-width: 767px)"
-            srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-          <img class="offers__image" src="#" alt="Фотография женщины на фоне неба." width="320" height="360">
+            srcset="img/offers/offers-phone@1x.webp 1x, img/offers/offers-phone@2x.webp 2x" width="320" height="360">
+          <img class="offers__image" src="img/offers/offers-phone@1x.jpg" alt="Фотография женщины на фоне неба." width="320" height="360">
         </picture>
       </div>
       <ul class="offers__list">
@@ -403,17 +394,11 @@
       <article class="reviews__card">
         <div class="reviews__card-image-wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1220px)"
-              srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="260" height="300">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="260" height="300">
-            <source type="image/png" media="(min-width: 1220px)"
-              srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-            <source type="image/png" media="(min-width: 768px)"
-              srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="260" height="300">
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="260" height="300">
-            <img src="#" alt="Фотография клиента." width="68" height="68">
+            <source type="image/webp" media="(max-resolution: 2dppx)"
+              srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="68" height="68">
+            <source type="image/png" media="(max-resolution: 2dppx)"
+              srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="68" height="68">
+            <img src="img/reviews/reviews-photo@1x.png" alt="Фотография клиента." width="68" height="68">
           </picture>
         </div>
         <h3>Анна Орлова</h3>
