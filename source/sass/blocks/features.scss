@@ -80,4 +80,14 @@
       line-height: 26px;
     }
   }
+
+  @media (max-width: $pre-tablet-width) {
+    div {
+      margin: 0 auto;
+      min-width: $phone-width;
+      max-width: $phone-width;
+      padding-left: $phone-padding-x;
+      padding-right: $phone-padding-x;
+    }
+  }
 }
