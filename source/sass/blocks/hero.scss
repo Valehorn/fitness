@@ -13,7 +13,10 @@
   padding-top: 48px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
+    gap: 22px 30px;
     padding-top: 0;
   }
 }
@@ -21,7 +24,8 @@
 .hero__elements-container {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 26px;
     width: 324px;
   }
 
@@ -34,12 +38,14 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
+    align-self: center;
   }
 }
 
@@ -51,7 +57,15 @@
   max-width: 156px;
 
   @media (min-width: $tablet-width) {
+    gap: 0;
     max-width: 185px;
+  }
+}
+
+.hero__group-subtitle {
+  @media (min-width: $tablet-width) {
+    align-self: flex-end;
+    margin-bottom: 10px;
   }
 }
 
@@ -99,6 +113,7 @@
   @media (min-width: $tablet-width) {
     min-width: 185px;
     min-height: 56px;
+    align-self: flex-start;
   }
 
   @media (min-width: $desktop-width) {
