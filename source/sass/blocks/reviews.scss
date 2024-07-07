@@ -5,13 +5,15 @@
 }
 
 .reviews__button {
-  width: 25px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid transparent;
+  padding: 22px;
 
-  /* @media (max-width: $pre-tablet-width) {
-    display: none;
-  } */
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
 
 .reviews__card {

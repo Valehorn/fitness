@@ -72,8 +72,11 @@
 
 .games__button {
   min-height: 60px;
+  padding: 22px;
 
   @media (min-width: $tablet-width) {
     min-height: 66px;
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }

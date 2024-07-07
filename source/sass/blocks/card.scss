@@ -59,4 +59,10 @@
 
 .card__button {
   min-height: 66px;
+  padding: 25px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
