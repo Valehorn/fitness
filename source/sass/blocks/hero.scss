@@ -3,6 +3,14 @@
 .hero {
   background-image: $bg-primary-screen-color;
   color: $primary-white-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
+  }
 }
 
 .hero__group {
@@ -25,7 +33,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    justify-content: flex-end;
+    gap: 0 26px;
     width: 324px;
   }
 
@@ -46,6 +55,7 @@
   @media (min-width: $tablet-width) {
     line-height: 22px;
     align-self: center;
+    padding-top: 95px;
   }
 }
 
