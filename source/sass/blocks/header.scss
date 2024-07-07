@@ -1,5 +1,22 @@
 @use "../global/variables.scss";
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 .header__phone-link {
   font-size: 22px;
   line-height: 22px;

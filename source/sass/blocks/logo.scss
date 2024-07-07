@@ -1,6 +1,11 @@
 @use "../global/variables.scss";
 
 .logo {
+  width: 100px;
+  height: 20px;
+  min-width: auto;
+  max-width: auto;
+
   @media (min-width: $tablet-width) {
     width: 110px;
     height: 22px;
