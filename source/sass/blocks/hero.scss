@@ -3,6 +3,7 @@
 .hero {
   background-image: $bg-primary-screen-color;
   color: $primary-white-color;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
@@ -27,6 +28,10 @@
     gap: 22px 30px;
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .hero__elements-container {
@@ -36,6 +41,11 @@
     justify-content: flex-end;
     gap: 0 26px;
     width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    gap: 0;
   }
 
   @media (max-width: $pre-tablet-width) {
@@ -70,12 +80,21 @@
     gap: 0;
     max-width: 185px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    max-width: 270px;
+  }
 }
 
 .hero__group-subtitle {
   @media (min-width: $tablet-width) {
     align-self: flex-end;
     margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
