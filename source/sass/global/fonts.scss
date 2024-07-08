@@ -1,2 +1,3 @@
-@include font-face("Roboto Condensed", 300, normal, url("../../fonts/roboto-condensed/roboto-condensed-regular.woff2") format("woff2"));
-@include font-face("Alumni Sans", 300, normal, url("../../fonts/alumni-sans/alumni-sans-regular.woff2") format("woff2"));
+@include font-face("Roboto Condensed", 300, normal, url("../../fonts/roboto-condensed/roboto-condensed-regular.woff2") format("woff2"), url("../../fonts/roboto-condensed/roboto-condensed-regular.woff") format("woff"));
+@include font-face("Alumni Sans", 400, normal, url("../../fonts/alumni-sans/alumni-sans-regular.woff2") format("woff2"), url("../../fonts/alumni-sans/alumni-sans-regular.woff") format("woff"));
+@include font-face("Alumni Sans ExtraBold", 800, normal, url("../../fonts/alumni-sans/alumni-sans-extrabold.woff2") format("woff2"), url("../../fonts/alumni-sans/alumni-sans-extrabold.woff") format("woff"));

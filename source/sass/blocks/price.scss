@@ -2,13 +2,16 @@
 
 .price {
   background-color: $bg-additional-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  /* background-image: image-set(url("../../img/price/price-tablet@1x.webp") type("image/webp") 1x, url("../../img/price/price-tablet@2x.webp") type("image/webp") 2x, url("../../img/price/price-tablet@1x.png") type("image/png") 1x, url("../../img/price/price-tablet@2x.png") type("image/png") 2x, url("../../img/price/price-desktop@1x.webp") type("image/webp") 1x, url("../../img/price/price-desktop@2x.webp") type("image/webp") 2x, url("../../img/price/price-desktop@1x.png") type("image/png") 1x, rl("../../img/price/price-desktop@2x.png") type("image/png") 2x); */
   @media (min-width: $tablet-width) {
     background-image: image-set(url("../../img/price/price-tablet@1x.webp") type("image/webp") 1x, url("../../img/price/price-tablet@2x.webp") type("image/webp") 2x, url("../../img/price/price-tablet@1x.png") type("image/png") 1x, url("../../img/price/price-tablet@2x.png") type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: 275px 328px;
     background-position: bottom right;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,13 +19,54 @@
     background-repeat: no-repeat;
     background-size: 321px 384px;
     background-position: bottom right;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.price__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
 .price__tab-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 46px;
   list-style: none;
   padding: 0;
   margin: 0;
+  border-bottom: 2px solid rgb(120, 120, 120, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 310px;
+    gap: 10px 43px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 350px;
+    gap: 10px 51px;
+    margin-bottom: 40px;
+  }
 }
 
 .price__tab-item {
@@ -47,7 +91,27 @@
 }
 
 .price__cards-list-one-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+.price__cards-item:nth-of-type(2) article {
+  @media (min-width: $desktop-width) {
+    min-height: 448px;
+  }
 }

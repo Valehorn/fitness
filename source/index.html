@@ -10,6 +10,14 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff" type="font/woff" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff" type="font/woff" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff" type="font/woff" as="font"
+    crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -119,7 +127,7 @@
       </div>
     </section>
     <section class="price" data-test="price" id="price">
-      <div class="container">
+      <div class="price__container container">
         <h2 class="price__title title">Абонементы</h2>
         <ul class="price__tab-list">
           <li class="price__tab-item">1 месяц</li>
@@ -127,37 +135,40 @@
           <li class="price__tab-item">12 месяцев</li>
         </ul>
         <ul class="price__cards-list-one-month">
-          <li class="price__cards-item card">
+          <li class="price__cards-item">
             <article class="card">
               <h3 class="card__title">С тренером</h3>
               <p class="card__count">12 занятий</p>
               <p class="card__price">
+                <span class="card__price-decoration" aria-hidden="true">5000</span>
                 <span class="card__price-text">5000</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
-                <button class="button card__button button-secondary" type="button">Купить абонемент</button>
               </p>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </article>
           </li>
-          <li class="price__cards-item card">
+          <li class="price__cards-item">
             <article class="card">
               <h3 class="card__title">Дневной</h3>
               <p class="card__count">с 8:00 до 17:00</p>
               <p class="card__price">
+                <span class="card__price-decoration" aria-hidden="true">1700</span>
                 <span class="card__price-text">1700</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
-                <button class="button card__button button-secondary" type="button">Купить абонемент</button>
               </p>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </article>
           </li>
-          <li class="price__cards-item card">
+          <li class="price__cards-item">
             <article class="card">
               <h3 class="card__title">Полный день</h3>
               <p class="card__count">с 8:00 до 22:00</p>
               <p class="card__price">
+                <span class="card__price-decoration" aria-hidden="true">2700</span>
                 <span class="card__price-text">2700</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
-                <button class="button card__button button-secondary" type="button">Купить абонемент</button>
               </p>
+              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
             </article>
           </li>
         </ul>
