@@ -110,6 +110,8 @@
   }
 }
 
+
+/* Костыль */
 .price__cards-item:nth-of-type(2) article {
   @media (min-width: $desktop-width) {
     min-height: 448px;
