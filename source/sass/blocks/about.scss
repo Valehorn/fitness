@@ -1,6 +1,9 @@
 @use "../global/variables.scss";
 
 .about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   p {
     margin: 0;
   }
@@ -9,10 +12,40 @@
     display: none;
   }
 
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
   @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-top: 120px;
+    padding-bottom: 240px;
+
     p:last-of-type {
       display: block;
     }
+  }
+}
+
+.about__text-container {
+  margin-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.about__title {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -21,6 +54,7 @@
   line-height: 20px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -29,6 +63,15 @@
   @media (min-width: $desktop-width) {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 95px;
+  }
+}
+
+.about__image-container {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
