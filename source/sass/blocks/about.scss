@@ -75,6 +75,14 @@
   }
 }
 
+.about__video-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .about__video-plug {
   position: relative;
 }
