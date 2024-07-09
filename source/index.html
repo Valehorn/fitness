@@ -8,17 +8,15 @@
   <link rel="stylesheet" href="sass/style.scss" media="all">
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/alumni-sans/AlumniSans-Bold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff" type="font/woff" as="font"
-    crossorigin="anonymous"> -->
-  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff" type="font/woff" as="font"
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans/alumni-sans-regular.woff" type="font/woff" as="font"
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff" type="font/woff" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff" type="font/woff" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff" type="font/woff" as="font"
     crossorigin="anonymous">
 </head>
 
@@ -229,7 +227,7 @@
         <li class="juri__item">
           <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="juri__image-container">
+            <figure class="juri__image-container" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-resolution: 2dppx)"
                   srcset="img/juri/card-1@1x.webp 1x, img/juri/card-1@2x.webp 2x" width="260" height="300">
@@ -240,12 +238,20 @@
               </picture>
               <figcaption class="juri__name">Анна Павлова</figcaption>
             </figure>
+            <div class="juri__sub-card">
+              <p class="juri__sub-card-logo">Crossfit</p>
+              <ul class="juri__sub-card-list">
+                <li class="juri__sub-card-item">Certified Level 3 Trainer</li>
+                <li class="juri__sub-card-item">Победитель чемпионата России по CrossFit</li>
+                <li class="juri__sub-card-item">Опыт — 2 года</li>
+              </ul>
+            </div>
           </article>
         </li>
         <li class="juri__item">
           <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="juri__image-container">
+            <figure class="juri__image-container" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-resolution: 2dppx)"
                   srcset="img/juri/card-2@1x.webp 1x, img/juri/card-2@2x.webp 2x" width="260" height="300">
@@ -256,12 +262,20 @@
               </picture>
               <figcaption class="juri__name">Алексей Лавров</figcaption>
             </figure>
+            <div class="juri__sub-card">
+              <p class="juri__sub-card-logo">Crossfit</p>
+              <ul class="juri__sub-card-list">
+                <li class="juri__sub-card-item">Certified Level 15 Trainer</li>
+                <li class="juri__sub-card-item">Еще 1 победитель чемпионата России по CrossFit</li>
+                <li class="juri__sub-card-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </article>
         </li>
         <li class="juri__item">
           <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="juri__image-container">
+            <figure class="juri__image-container" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-resolution: 2dppx)"
                   srcset="img/juri/card-3@1x.webp 1x, img/juri/card-3@2x.webp 2x" width="260" height="300">
@@ -272,12 +286,20 @@
               </picture>
               <figcaption class="juri__name">Александр Пашков</figcaption>
             </figure>
+            <div class="juri__sub-card">
+              <p class="juri__sub-card-logo">Crossfit</p>
+              <ul class="juri__sub-card-list">
+                <li class="juri__sub-card-item">Certified Level 110 Trainer</li>
+                <li class="juri__sub-card-item">И еще 1 победитель чемпионата России по CrossFit</li>
+                <li class="juri__sub-card-item">Опыт — 7 лет</li>
+              </ul>
+            </div>
           </article>
         </li>
         <li class="juri__item">
           <article class="juri__card">
             <h2 class="visually-hidden">Карточка жюри</h2>
-            <figure class="juri__image-container">
+            <figure class="juri__image-container" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-resolution: 2dppx)"
                   srcset="img/juri/card-4@1x.webp 1x, img/juri/card-4@2x.webp 2x" width="260" height="300">
@@ -288,6 +310,15 @@
               </picture>
               <figcaption class="juri__name">Мария Кетова</figcaption>
             </figure>
+            <div class="juri__sub-card">
+              <p class="juri__sub-card-logo">Crossfit</p>
+              <ul class="juri__sub-card-list">
+                <li class="juri__sub-card-item">Certified Level 99 Trainer</li>
+                <li class="juri__sub-card-item">И еще 1 - мы их коллекционируем.
+                </li>
+                <li class="juri__sub-card-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </article>
         </li>
       </ol>
