@@ -25,6 +25,12 @@
   }
 }
 
+.card--special {
+  @media (min-width: $desktop-width) {
+    min-height: 448px;
+  }
+}
+
 .card__title {
   font-weight: 700;
   font-size: 22px;

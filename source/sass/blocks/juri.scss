@@ -1,17 +1,55 @@
 @use "../global/variables";
 
+.juri {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.juri__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+}
+
 .juri__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.juri__card {
+  position: relative;
+}
+
 .juri__name {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
+  min-width: 177px;
+  color: $primary-white-color;
+}
+
+.juri__image-container {
+  margin: 0;
 }
 
 .juri__image {
-  margin: 0;
+  width: 260px;
+  height: 290px;
 }
