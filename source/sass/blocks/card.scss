@@ -83,6 +83,7 @@
   color: #e8e8e8;
   bottom: 1px;
   left: -16px;
+  pointer-events: none;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
