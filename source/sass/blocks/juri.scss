@@ -93,26 +93,6 @@
   margin-bottom: 34px;
 }
 
-/* Набросок js кода на будущее */
-
-/*   const list = document.querySelector('.juri__list'); // предположим, что у вашего списка есть класс .juri__list
-
-  list.addEventListener('mouseenter', function(event) {
-    const target = event.target.closest('.juri__image-container');
-    if (target) {
-      const subCard = target.nextElementSibling;
-      subCard.classList.add('juri__sub-card--visible');
-    }
-  }, true);
-
-  list.addEventListener('mouseleave', function(event) {
-    const target = event.target.closest('.juri__image-container');
-    if (target) {
-      const subCard = target.nextElementSibling;
-      subCard.classList.remove('juri__sub-card--visible');
-    }
-  }, true); */
-
 .juri__sub-card-list {
   display: flex;
   flex-direction: column;
@@ -148,4 +128,18 @@
 .juri__image-container:focus-visible > .juri__name {
   top: 46px;
   z-index: 2;
+}
+
+.juri__swiper-slide:hover .juri__sub-card {
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.juri__swiper-slide:hover .juri__name {
+  @media (min-width: $desktop-width) {
+    top: 46px;
+    z-index: 2;
+  }
 }
