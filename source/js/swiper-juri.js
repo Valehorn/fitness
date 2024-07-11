@@ -1,6 +1,6 @@
 import { Swiper } from './vendor/swiper-bundle';
 import { Navigation } from './vendor/modules';
-import '../sass/vendor/swiper.css';
+import '../sass/vendor/swiper.scss';
 
 const juriSwiperContainer = document.querySelector('.swiper');
 

@@ -12,12 +12,9 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff" type="font/woff" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff" type="font/woff" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff" type="font/woff" as="font"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="fonts/alumni-sans/alumni-sans-extrabold.woff" type="font/woff"  crossorigin="anonymous">
+  <link rel="stylesheet" href="fonts/alumni-sans/alumni-sans-semibold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="fonts/roboto-condensed/roboto-condensed-regular.woff" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -144,7 +141,7 @@
                 <span class="card__price-text">5000</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
               </p>
-              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
+              <a class="button card__button button-secondary" href="#">Купить абонемент</a>
             </article>
           </li>
           <li class="price__cards-item">
@@ -156,7 +153,7 @@
                 <span class="card__price-text">1700</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
               </p>
-              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
+              <a class="button card__button button-secondary" href="#">Купить абонемент</a>
             </article>
           </li>
           <li class="price__cards-item">
@@ -168,7 +165,7 @@
                 <span class="card__price-text">2700</span>&nbsp; <span class="card__price-unit">&#8381;
                 </span>
               </p>
-              <button class="button card__button button-secondary" type="button">Купить абонемент</button>
+              <a class="button card__button button-secondary" href="#">Купить абонемент</a>
             </article>
           </li>
         </ul>
@@ -219,7 +216,12 @@
     <section class="juri container" data-test="juri" id="juri">
       <h2 class="juri__title title">Жюри</h2>
       <div class="swiper-overflow">
-        <div class="swiper-button-prev"></div>
+        <button class="swiper-button-prev swiper-button-prev--disabled" type="button">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <span class="visually-hidden">Вперед</span>
+        </button>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -417,7 +419,6 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
       </div>
     </section>
     <section class="features" data-test="features">
