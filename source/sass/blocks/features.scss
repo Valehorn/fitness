@@ -41,12 +41,12 @@
     margin: 0;
   }
 
-  li:nth-of-type(3) article {
+  li:not(:has(div)) article {
     padding-top: 30px;
     padding-bottom: 40px;
   }
 
-  li:nth-of-type(3) h3 {
+  li:not(:has(div)) h3 {
     clip: rect(0 0 0 0);
     position: absolute;
     margin: -1px;
@@ -58,15 +58,15 @@
     white-space: nowrap;
   }
 
-  li:nth-of-type(3) p:first-of-type {
+  li:not(:has(div)) p:first-of-type {
     margin-bottom: 5px;
   }
 
-  li:nth-of-type(3) p:nth-of-type(2) {
+  li:not(:has(div)) p:nth-of-type(2) {
     margin-bottom: 20px;
   }
 
-  li:nth-of-type(3) p:nth-of-type(2) span {
+  li:not(:has(div)) p:nth-of-type(2) span {
     font-size: 22px;
     line-height: 22px;
     font-weight: 700;
@@ -98,7 +98,7 @@
     line-height: 20px;
   }
 
-  li:nth-of-type(3) {
+  li:not(:has(div)) {
     background-color: $primary-dark-blue-color;
     color: $primary-white-color;
   }
@@ -131,32 +131,32 @@
       max-width: 324px;
     }
 
-    li:nth-of-type(3) {
+    li:not(:has(div)) {
       min-width: 325px;
       max-width: 325px;
     }
 
-    li:nth-of-type(3) article {
+    li:not(:has(div)) article {
       padding-top: 35px;
       padding-bottom: 35px;
       padding-left: 35px;
       padding-right: 35px;
     }
 
-    li:nth-of-type(3) span:nth-of-type(2) {
+    li:not(:has(div)) span:nth-of-type(2) {
       font-size: 24px;
       line-height: 24px;
     }
 
-    li:nth-of-type(3) p:first-of-type {
+    li:not(:has(div)) p:first-of-type {
       margin-bottom: 25px;
     }
 
-    li:nth-of-type(3) p:nth-of-type(2) {
+    li:not(:has(div)) p:nth-of-type(2) {
       margin-bottom: 25px;
     }
 
-    li:nth-of-type(3) p:nth-of-type(2) span {
+    li:not(:has(div)) p:nth-of-type(2) span {
       font-size: 24px;
       line-height: 24px;
     }
@@ -174,7 +174,7 @@
     gap: 80px 40px;
 
     li,
-    li:nth-of-type(3) {
+    li:not(:has(div)) {
       max-width: none;
     }
 
@@ -183,10 +183,9 @@
     }
 
 
-    li:nth-of-type(3) {
+    li:not(:has(div)) {
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      min-height: 300px;
     }
 
     li:nth-of-type(4) {
@@ -197,7 +196,7 @@
       grid-column: 3 / -1;
     }
 
-    li:nth-of-type(3) article {
+    li:not(:has(div)) article {
       padding-top: 58px;
       padding-bottom: 58px;
       padding-left: 40px;
@@ -209,15 +208,15 @@
       line-height: 22px;
     }
 
-    li:nth-of-type(3) p:first-of-type {
+    li:not(:has(div)) p:first-of-type {
       margin-bottom: 10px;
     }
 
-    li:nth-of-type(3) p:nth-of-type(2) {
+    li:not(:has(div)) p:nth-of-type(2) {
       margin-bottom: 30px;
     }
 
-    li:nth-of-type(3) p:nth-of-type(2) span {
+    li:not(:has(div)) p:nth-of-type(2) span {
       font-size: 26px;
       line-height: 26px;
     }
@@ -242,7 +241,7 @@
     }
 
     li:nth-of-type(2) article,
-    li:nth-of-type(3) article {
+    li:not(:has(div)) article {
       margin-bottom: 40px;
     }
 
