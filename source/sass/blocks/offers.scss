@@ -30,10 +30,9 @@
 .offers__preview {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
 
   @media (max-width: $pre-tablet-width) {
@@ -154,6 +153,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .offers__item {
@@ -167,6 +171,13 @@
   padding-right: 20px;
   border: 7px solid transparent;
   border-image: linear-gradient(151deg, #ed0233 0%, #00359f 100%) 1;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 188px;
+    width: 324px;
+  }
 
   h3 {
     font-weight: 700;
@@ -184,6 +195,11 @@
     h3 {
       font-size: 26px;
       line-height: 26px;
+    }
+
+    p {
+      text-align: start;
+      margin-bottom: auto;
     }
   }
 }
