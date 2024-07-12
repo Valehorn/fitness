@@ -30,7 +30,7 @@
 }
 
 .faq__accordion {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     align-content: flex-start;
     gap: 10px 40px;
