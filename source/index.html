@@ -492,48 +492,52 @@
         <div class="container container--tablet-none">
           <h2 class="offers__title title">Акции</h2>
         </div>
-        <div class="offers__preview">
-        <div class="offers__card">
-          <div>
-            <h3>Год</h3>
-            <p><span>4999</span></p>
-            <p>Безлимитный абонемент<br>в тренажёрный зал</p>
-            <a class="offers__card-link details-link details-link--primary" href="#">Подробнее</a>
+        <div class="offers__preview-container">
+          <div class="offers__preview">
+            <div class="offers__card">
+              <div>
+                <h3>Год</h3>
+                <p><span>4999</span></p>
+                <p>Безлимитный абонемент<br>в тренажёрный зал</p>
+                <a class="offers__card-link details-link details-link--primary" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="offers__image-container">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@1x.webp 2x" width="280"
+                  height="460">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400"
+                  height="462">
+                <source type="image/jpeg" media="(min-width: 1366px)"
+                  srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.png 2x" width="280"
+                  height="460">
+                <source type="image/jpeg" media="(min-width: 768px)"
+                  srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400"
+                  height="462">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/offers/offers-phone@1x.webp 1x, img/offers/offers-phone@2x.webp 2x" width="320"
+                  height="360">
+                <img class="offers__image" src="img/offers/offers-phone@1x.jpg" alt="Фотография женщины на фоне неба."
+                  width="320" height="360">
+              </picture>
+            </div>
           </div>
-        </div>
-        <div class="offers__image-container">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/offers/offers-desktop@1x.webp 1x, img/offers/offers-desktop@1x.webp 2x" width="280"
-              height="460">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/offers/offers-tablet@1x.webp 1x, img/offers/offers-tablet@2x.webp 2x" width="400"
-              height="462">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/offers/offers-desktop@1x.jpg 1x, img/offers/offers-desktop@2x.png 2x" width="280"
-              height="460">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/offers/offers-tablet@1x.jpg 1x, img/offers/offers-tablet@2x.jpg 2x" width="400" height="462">
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/offers/offers-phone@1x.webp 1x, img/offers/offers-phone@2x.webp 2x" width="320" height="360">
-            <img class="offers__image" src="img/offers/offers-phone@1x.jpg" alt="Фотография женщины на фоне неба."
-              width="320" height="360">
-          </picture>
-        </div>
-      </div>
-        <div class="container container--tablet-none">
-          <ul class="offers__list">
-            <li class="offers__item">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
-            </li>
-            <li class="offers__item">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
-            </li>
-          </ul>
+          <div class="container container--tablet-none">
+            <ul class="offers__list">
+              <li class="offers__item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
+              </li>
+              <li class="offers__item">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a class="offers__card-link details-link details-link--secondary" href="#">Подробнее</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
