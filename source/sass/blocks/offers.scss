@@ -1,19 +1,72 @@
 @use "../global/variables";
 
+.offers {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.offers__title {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.offers__preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    display: contents;
+  }
+}
+
 .offers__card {
   background-color: $bg-banners-color;
   color: $primary-white-color;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   h3 {
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
     margin: 0;
+    margin-bottom: 9px;
   }
 
   span {
     font-size: 64px;
     line-height: 64px;
+    font-weight: 700;
   }
 
   p {
@@ -22,10 +75,31 @@
     margin: 0;
   }
 
+  p:first-of-type {
+    margin-bottom: 28px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 28px;
+  }
+
   @media (min-width: $tablet-width) {
+    text-align: start;
+    width: 278px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    div {
+      align-items: flex-start;
+      height: 100%;
+    }
+
     h3 {
       font-size: 24px;
       line-height: 24px;
+      margin-bottom: 20px;
     }
 
     span {
@@ -36,6 +110,14 @@
     p {
       font-size: 18px;
       line-height: 24px;
+    }
+
+    p:first-of-type {
+      margin-bottom: 40px;
+    }
+
+    p:last-of-type {
+      margin-bottom: auto;
     }
   }
 
@@ -51,19 +133,38 @@
       margin: 0 auto;
       min-width: $phone-width;
       max-width: $phone-width;
-      padding-left: $phone-padding-x;
-      padding-right: $phone-padding-x;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
 
+.offers__image-container {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .offers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 7px solid transparent;
   border-image: linear-gradient(151deg, #ed0233 0%, #00359f 100%) 1;
 
@@ -75,6 +176,7 @@
   }
 
   p {
+    text-align: center;
     margin: 0;
   }
 
