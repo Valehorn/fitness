@@ -1,4 +1,5 @@
 const faqDetailsList = document.querySelector('.faq__details-list');
+const faqTabItems = document.querySelectorAll('.faq__tab-item');
 const faqItems = faqDetailsList.querySelectorAll('li');
 
 const loadState = (key) => {
@@ -23,14 +24,13 @@ const saveState = (key, state) => {
   localStorage.setItem(key, JSON.stringify(state));
 };
 const saveTabState = () => {
-  const faqTabItems = document.querySelectorAll('.faq__tab-item');
   const tabStates = Array.from(faqTabItems).map((item) => item.classList.contains('faq__tab-item--active'));
   saveState('faqTabStates', tabStates);
 };
+
 const loadTabState = () => {
   const tabStates = loadState('faqTabStates');
   if (tabStates) {
-    const faqTabItems = document.querySelectorAll('.faq__tab-item');
     tabStates.forEach((isActive, index) => {
       if (isActive) {
         faqTabItems[index].classList.add('faq__tab-item--active');
@@ -40,8 +40,19 @@ const loadTabState = () => {
         faqTabItems[index].querySelector('.faq__tab-button').classList.remove('faq__tab-button--active');
       }
     });
+  } else {
+    // Открываем первый таб и первый элемент списка по умолчанию
+    const firstTabItem = faqTabItems[0];
+    firstTabItem.classList.add('faq__tab-item--active');
+    firstTabItem.querySelector('.faq__tab-button').classList.add('faq__tab-button--active');
   }
+
+  // Открываем первый элемент списка по умолчанию
+  const firstFaqItem = faqItems[0];
+  firstFaqItem.querySelector('p').style.height = `${firstFaqItem.querySelector('p').scrollHeight}px`;
 };
+
+
 const saveAccordionState = (tabIndex) => {
   const accordionStates = Array.from(faqItems).map((item) => Boolean(item.querySelector('p').style.height));
   saveState(`accordionStates_${tabIndex}`, accordionStates);
