@@ -5,8 +5,9 @@ const faqDetailsList = document.querySelector('.faq__details-list');
 const faqItems = faqDetailsList.querySelectorAll('li');
 
 const updateFaqDetails = (index) => {
+  const currentTab = faqTabs[index];
   faqItems.forEach((item, itemIndex) => {
-    const { question, answer } = faqTabs[index][itemIndex];
+    const { question, answer } = currentTab[itemIndex];
     item.querySelector('h3').textContent = question;
     item.querySelector('p').textContent = answer;
   });
