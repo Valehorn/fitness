@@ -1,10 +1,9 @@
 import { juriSwiperInit } from './swiper-juri';
-import { faqTabsToggle, test } from './faq-tabs';
+import { faqTabsToggle } from './faq-tabs';
 
 const bootStrap = () => {
   juriSwiperInit();
   faqTabsToggle();
-  test();
 };
 
 bootStrap();
