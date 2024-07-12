@@ -1,4 +1,5 @@
 import { faqTabs } from './const';
+import { loadAccordionState, saveTabState } from './local-storage';
 
 const faqTabList = document.querySelector('.faq__tab-list');
 const faqDetailsList = document.querySelector('.faq__details-list');
@@ -11,6 +12,7 @@ const updateFaqDetails = (index) => {
     item.querySelector('h3').textContent = question;
     item.querySelector('p').textContent = answer;
   });
+  loadAccordionState(index);
 };
 
 const changeFaqText = (evt) => {
@@ -41,6 +43,7 @@ const onFaqTabButtonClick = (evt) => {
     buttonTarget.classList.add('faq__tab-button--active');
   }
   changeFaqText(evt);
+  saveTabState();
 };
 
 const faqTabsToggle = () => {
