@@ -36,17 +36,21 @@ const reviewsSwiperInit = () => {
     if (reviewsSwiper.isBeginning) {
       prevButton.classList.add('swiper-button-prev--disabled');
       prevButton.disabled = true;
+      reviewsSwiper.allowSlidePrev = false;
     } else {
       prevButton.classList.remove('swiper-button-prev--disabled');
       prevButton.disabled = false;
+      reviewsSwiper.allowSlidePrev = true;
     }
 
     if (reviewsSwiper.isEnd) {
       nextButton.classList.add('swiper-button-prev--disabled');
       nextButton.disabled = true;
+      reviewsSwiper.allowSlideNext = false;
     } else {
       nextButton.classList.remove('swiper-button-prev--disabled');
       nextButton.disabled = false;
+      reviewsSwiper.allowSlideNext = true;
     }
   }
   updateReviewsButtons();
