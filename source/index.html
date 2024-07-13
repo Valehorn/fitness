@@ -119,8 +119,8 @@
               </button>
             </div>
           </div>
-          <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
-            allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
+          <!-- <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
+            allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe> -->
         </div>
       </div>
     </section>
@@ -547,73 +547,148 @@
         <div class="faq__accordion">
           <ul class="faq__tab-list">
             <li class="faq__tab-item faq__tab-item--active">
-              <button class="button faq__tab-button button--accent faq__tab-button--active" type="button"><span>Центр</span></button>
+              <button class="button faq__tab-button button--accent faq__tab-button--active" type="button"
+                data-faq-list="description"><span>Центр</span></button>
             </li>
             <li class="faq__tab-item">
               <button class="button faq__tab-button
-          button--accent" type="button"><span>Абонемент</span></button>
+          button--accent" type="button" data-faq-list="subscription"><span>Абонемент</span></button>
             </li>
             <li class="faq__tab-item">
               <button class="button faq__tab-button
-          button--accent" type="button"><span>Услуги</span></button>
+          button--accent" type="button" data-faq-list="services"><span>Услуги</span></button>
             </li>
             <li class="faq__tab-item">
               <button class="button faq__tab-button
-          button--accent" type="button"><span>Правила</span></button>
+          button--accent" type="button" data-faq-list="rules"><span>Правила</span></button>
             </li>
           </ul>
           <!-- Заглушка Аккордеона -->
-          <ul class="faq__details-list">
-            <li>
-              <div></div>
-              <h3>Как стать членом фитнес-центра?</h3>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
-                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            </li>
-            <li>
-              <div></div>
-              <h3>Где можно посмотреть расписание?</h3>
-              <p>Нигде.</p>
-            </li>
-            <li>
-              <div></div>
-              <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-              <p>Нет.</p>
-            </li>
-            <li>
-              <div></div>
-              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-              <p>Много. Низкая.</p>
-            </li>
-          </ul>
+          <div class="faq__details-lists-container">
+            <ul class="faq__details-list faq__details-list--active" data-faq-list="description">
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker faq__details-list-marker--active"></div>
+                </div>
+                <h3>Как стать членом фитнес-центра?</h3>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке
+                  абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Где можно посмотреть расписание?</h3>
+                <p>Нигде.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                <p>Нет.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                <p>Много. Низкая.</p>
+              </li>
+            </ul>
+            <ul class="faq__details-list" data-faq-list="subscription">
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Варианты?</h3>
+                <p>Зависит от тарифа.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Какие тарифы?</h3>
+                <p>По длительности: 1 месяц, 6 месяцев, 12 месяцев.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Сколько стоит?</h3>
+                <p>Прилично.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Есть активные акции?</h3>
+                <p>Бесплатный месяц, скидка 20%</p>
+              </li>
+            </ul>
+            <ul class="faq__details-list" data-faq-list="services">
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Какие услуги предоставляет зал?</h3>
+                <p>Спортивные.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Какое направление у этих спортивных услуг?</h3>
+                <p>Заработок денег. И эпичное смотрение в сторону, как супермен из промо.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Пакеты услуг?</h3>
+                <p>Только полиэтиленовые.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Какие тренажеры есть в зале?</h3>
+                <p>Велосипед и весы.</p>
+              </li>
+            </ul>
+            <ul class="faq__details-list" data-faq-list="rules">
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Можно не платить?</h3>
+                <p>Нет.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Можно ходить на руках?</h3>
+                <p>Если это упражнение.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Так есть кулеры в центре?</h3>
+                <p>Только для персонала.</p>
+              </li>
+              <li>
+                <div class="faq__details-list-marker-container">
+                  <div class="faq__details-list-marker"></div>
+                </div>
+                <h3>Можно пользоваться скамейками и стульями с креслами?</h3>
+                <p>Только персоналу.</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- <ul class="faq__details-list">
-        <li>
-          <details>
-            <summary>Как стать членом фитнес-центра?</summary>
-            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
-              абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Где можно посмотреть расписание?</summary>
-            <p>Нигде.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Есть кулеры в центре? Предоставляются полотенца?</summary>
-            <p>Нет.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Сколько тренеров работает в клубе и какова их квалификация?</summary>
-            <p>Много. Низкая.</p>
-          </details>
-        </li>
-      </ul> -->
       </div>
     </section>
     <section class="reviews container" data-test="reviews">

@@ -1,23 +1,36 @@
-import { saveAccordionState } from './local-storage';
+const faqDetailsListContainer = document.querySelector('.faq__details-lists-container');
 
-const faqDetailsList = document.querySelector('.faq__details-list');
-const faqItems = document.querySelectorAll('.faq__tab-item');
+const faqListFirstItemFind = () => {
+  const firstItem = document.querySelector('.faq__details-list li');
+  if (firstItem) {
+    const firstDescription = firstItem.querySelector('p');
+    const marker = firstItem.querySelector('.faq__details-list-marker');
+    if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
+      firstDescription.style.height = `${firstDescription.scrollHeight}px`;
+    }
+  }
+};
 
 const onAccordionItemClick = (evt) => {
-  const faqItem = evt.target.closest('li');
-  if (faqItem) {
-    const answer = faqItem.querySelector('p');
-    answer.style.height = answer.style.height ? null : `${answer.scrollHeight}px`;
-    const activeTabIndex = Array.from(faqItems).findIndex((item) => item.classList.contains('faq__tab-item--active'));
-    saveAccordionState(activeTabIndex);
+  const item = evt.target.closest('li');
+  if (!item) {
+    return;
   }
+
+  const marker = item.querySelector('.faq__details-list-marker');
+  const content = item.querySelector('p');
+
+  const isActive = marker.classList.toggle('faq__details-list-marker--active');
+  content.style.height = isActive ? `${content.scrollHeight}px` : '0';
 };
 
 const faqAccordionToggle = () => {
-  if (!faqDetailsList) {
+  if (!faqDetailsListContainer) {
     return;
   }
-  faqDetailsList.addEventListener('click', onAccordionItemClick);
+  faqListFirstItemFind();
+  faqDetailsListContainer.addEventListener('click', onAccordionItemClick);
 };
 
 export { faqAccordionToggle };
+

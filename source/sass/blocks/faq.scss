@@ -108,12 +108,20 @@
   }
 }
 
+.faq__details-lists-container {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .faq__details-list {
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
 
   li {
+    position: relative;
     border-top: 1px solid #74819c;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -161,5 +169,71 @@
       line-height: 24px;
       margin-bottom: 31px;
     }
+  }
+}
+
+.faq__details-list--active {
+  display: block;
+}
+
+.faq__details-list-marker-container {
+  position: absolute;
+  right: 0;
+}
+
+.faq__details-list-marker {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $primary-dark-blue-color;
+  border-radius: 100%;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 14px;
+    height: 1px;
+    background-color: $primary-dark-blue-color;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: $primary-dark-blue-color;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 20px;
+    }
+
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.faq__details-list-marker--active {
+  background-color: $primary-dark-blue-color;
+
+  &::before,
+  &::after {
+    background-color: $primary-white-color;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
