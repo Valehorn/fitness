@@ -32,23 +32,9 @@
   display: flex;
 }
 
-.reviews__button {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 22px;
-
-  @media (min-width: $tablet-width) {
-    width: 73px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-}
-
 .reviews__card {
   background-color: $primary-dark-blue-color;
   color: $primary-white-color;
-  width: 240px;
 
   h3 {
     font-weight: 400;

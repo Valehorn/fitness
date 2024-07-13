@@ -2,7 +2,7 @@ import { Swiper } from './vendor/swiper-bundle';
 import { Navigation } from './vendor/modules';
 import '../sass/vendor/swiper.scss';
 
-const juriSwiperContainer = document.querySelector('.juri__swiper');
+const juriSwiperContainer = document.querySelector('.swiper-juri');
 
 const juriSwiperInit = () => {
   new Swiper(juriSwiperContainer, {

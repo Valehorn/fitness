@@ -40,18 +40,37 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+}
+
+.swiper-juri {
   width: 260px;
 }
 
 @media (min-width: 768px) {
-  .swiper {
+  .swiper-juri {
     width: 560px;
   }
 }
 
 @media (min-width: 1366px) {
-  .swiper {
+  .swiper-juri {
     width: 1160px;
+  }
+}
+
+.swiper-reviews {
+  width: 240px;
+}
+
+@media (min-width: 768px) {
+  .swiper-reviews {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .swiper-reviews {
+    width: 560px;
   }
 }
 
@@ -299,6 +318,7 @@
   background-color: #ffffff;
 }
 
+
 @media (min-width: 768px) {
 
   .swiper-button-prev,
@@ -306,12 +326,20 @@
     display: flex;
   }
 
-  .swiper-button-prev {
+  .swiper-button-juri-prev {
     left: -10%;
   }
 
-  .swiper-button-next {
+  .swiper-button-juri-next {
     right: -10%;
+  }
+
+  .swiper-button-reviews-prev {
+    left: 0;
+  }
+
+  .swiper-button-reviews-next {
+    right: 0;
   }
 
   .swiper-button-prev::after,
@@ -335,12 +363,20 @@
 }
 
 @media (min-width: 1366px) {
-  .swiper-button-prev {
+  .swiper-button-juri-prev {
     left: -5%;
   }
 
-  .swiper-button-next {
+  .swiper-button-juri-next {
     right: -5%;
+  }
+
+  .swiper-button-reviews-prev {
+    left: 20%;
+  }
+
+  .swiper-button-reviews-next {
+    right: 20%;
   }
 }
 
