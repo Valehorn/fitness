@@ -12,10 +12,11 @@ const reviewsSwiperInit = () => {
     slidesPerView: 1,
     loop: false,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews__button--back',
+      prevEl: '.reviews__button--next',
     },
   });
 };
 
 export { reviewsSwiperInit };
+
