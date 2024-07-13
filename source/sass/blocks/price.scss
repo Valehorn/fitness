@@ -75,6 +75,7 @@
   line-height: 16px;
   font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
   transition: color 0.5s ease;
 
   @media (min-width: $tablet-width) {
