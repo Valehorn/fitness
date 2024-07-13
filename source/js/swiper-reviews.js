@@ -2,7 +2,7 @@ import { Swiper } from './vendor/swiper-bundle';
 import { Navigation } from './vendor/modules';
 import '../sass/vendor/swiper.scss';
 
-const reviewsSwiperContainer = document.querySelector('.swiper-reviews');
+const reviewsSwiperContainer = document.querySelector('.swiper__reviews');
 
 const reviewsSwiperInit = () => {
   const reviewsSwiper = new Swiper(reviewsSwiperContainer, {
@@ -13,8 +13,8 @@ const reviewsSwiperInit = () => {
     loop: false,
     lockClass: '.swiper-button-prev--disabled',
     navigation: {
-      nextEl: '.swiper-button-reviews-next',
-      prevEl: '.swiper-button-reviews-prev',
+      nextEl: '.swiper__button-reviews-next',
+      prevEl: '.swiper__button-reviews-prev',
     },
     on: {
       slideChange: () => {
@@ -30,8 +30,8 @@ const reviewsSwiperInit = () => {
   });
 
   function updateReviewsButtons() {
-    const prevButton = document.querySelector('.swiper-button-reviews-prev');
-    const nextButton = document.querySelector('.swiper-button-reviews-next');
+    const prevButton = document.querySelector('.swiper__button-reviews-prev');
+    const nextButton = document.querySelector('.swiper__button-reviews-next');
 
     if (reviewsSwiper.isBeginning) {
       prevButton.classList.add('swiper-button-prev--disabled');
@@ -56,7 +56,7 @@ const reviewsSwiperInit = () => {
   updateReviewsButtons();
 };
 
-//Поиск всех методов свайпера для лока кнопки занял 5 часов.
+//Поиск всех методов свайпера для лока и запрета прокрутки кнопки занял 5 часов.
 
 export { reviewsSwiperInit };
 

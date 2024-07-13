@@ -25,7 +25,7 @@
   z-index: 1;
 }
 
-.swiper-overflow {
+.swiper__overflow {
   position: relative;
 }
 
@@ -42,34 +42,34 @@
   z-index: 1;
 }
 
-.swiper-juri {
+.swiper__juri {
   width: 260px;
 }
 
 @media (min-width: 768px) {
-  .swiper-juri {
+  .swiper__juri {
     width: 560px;
   }
 }
 
 @media (min-width: 1366px) {
-  .swiper-juri {
+  .swiper__juri {
     width: 1160px;
   }
 }
 
-.swiper-reviews {
+.swiper__reviews {
   width: 240px;
 }
 
 @media (min-width: 768px) {
-  .swiper-reviews {
+  .swiper__reviews {
     width: 500px;
   }
 }
 
 @media (min-width: 1366px) {
-  .swiper-reviews {
+  .swiper__reviews {
     width: 560px;
   }
 }
@@ -326,19 +326,19 @@
     display: flex;
   }
 
-  .swiper-button-juri-prev {
+  .swiper__button-juri-prev {
     left: -10%;
   }
 
-  .swiper-button-juri-next {
+  .swiper__button-juri-next {
     right: -10%;
   }
 
-  .swiper-button-reviews-prev {
+  .swiper-slideswiper__button-reviews-prev {
     left: 0;
   }
 
-  .swiper-button-reviews-next {
+  .swiper__button-reviews-next {
     right: 0;
   }
 
@@ -363,19 +363,19 @@
 }
 
 @media (min-width: 1366px) {
-  .swiper-button-juri-prev {
+  .swiper__button-juri-prev {
     left: -5%;
   }
 
-  .swiper-button-juri-next {
+  .swiper__button-juri-next {
     right: -5%;
   }
 
-  .swiper-button-reviews-prev {
+  .swiper-slideswiper__button-reviews-prev {
     left: 20%;
   }
 
-  .swiper-button-reviews-next {
+  .swiper__button-reviews-next {
     right: 20%;
   }
 }
