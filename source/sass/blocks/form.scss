@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: transparent;
     width: 683px;
   }
 }
@@ -24,9 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     min-width: 0;
     max-width: none;
   }
