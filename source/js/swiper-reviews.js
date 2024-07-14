@@ -7,7 +7,7 @@ const reviewsSwiperContainer = document.querySelector('.swiper-reviews');
 const reviewsSwiperInit = () => {
   const reviewsSwiper = new Swiper(reviewsSwiperContainer, {
     modules: [Navigation],
-    speed: 400,
+    speed: 600,
     spaceBetween: 40,
     slidesPerView: 1,
     loop: false,

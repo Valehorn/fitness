@@ -1,0 +1,8 @@
+@use "../global/variables.scss";
+
+.form-contacts-desktop-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

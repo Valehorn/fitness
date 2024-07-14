@@ -7,7 +7,7 @@ const juriSwiperContainer = document.querySelector('.swiper-juri');
 const juriSwiperInit = () => {
   new Swiper(juriSwiperContainer, {
     modules: [Navigation],
-    speed: 400,
+    speed: 600,
     spaceBetween: 40,
     loop: true,
     navigation: {

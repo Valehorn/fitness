@@ -1,5 +1,19 @@
 @use "../global/variables";
 
+.contacts {
+  @media (min-width: $desktop-width) {
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+.contacts__title {
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
 .contacts__list {
   list-style: none;
   padding: 0;
