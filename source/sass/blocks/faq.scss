@@ -187,6 +187,7 @@
   height: 30px;
   border: 1px solid $primary-dark-blue-color;
   border-radius: 100%;
+  transition: background-color 0.5s ease;
 
   &::before {
     position: absolute;
@@ -197,6 +198,7 @@
     width: 14px;
     height: 1px;
     background-color: $primary-dark-blue-color;
+    transition: background-color 0.5s ease;
   }
 
   &::after {
@@ -208,7 +210,7 @@
     width: 1px;
     height: 14px;
     background-color: $primary-dark-blue-color;
-    transition: transform 0.5s ease, background-color 0.5s ease;
+    transition: transform 0.7s ease, background-color 0.5s ease;
   }
 
   @media (min-width: $tablet-width) {
