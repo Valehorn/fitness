@@ -68,6 +68,14 @@
   height: 27px;
   transition: border-bottom 0.5s ease-in-out;
 
+  &:hover {
+    border-bottom: 1px solid $primary-white-color;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $primary-white-color;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;
