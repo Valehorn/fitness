@@ -4,5 +4,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    min-width: $desktop-width-container;
+    max-width: $desktop-width-container;
+    margin: 0 auto;
   }
 }
