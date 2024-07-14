@@ -1,0 +1,39 @@
+const form = document.querySelector('.form__free');
+const nameError = form.querySelector('.form__name-error');
+const phoneError = form.querySelector('.form__phone-error');
+const nameInput = form.querySelector('.form__name');
+const phoneInput = form.querySelector('.form__phone');
+
+const validateForm = (evt) => {
+  evt.preventDefault();
+  const nameValue = form.querySelector('.form__name').value;
+  const phoneValue = form.querySelector('.form__phone').value;
+  const nameValidate = /^[А-ЯA-Z][А-Яа-яA-Za-z\s]*$/;
+  const phoneValidate = /^(?:\d[-\d]*){11}$/;
+  let isValid = true;
+
+  if (!nameValidate.test(nameValue)) {
+    nameError.textContent = 'Имя должно содержать только буквы и пробелы, а также начинаться с большой буквы.';
+    nameError.style.display = 'block';
+    nameInput.classList.add('form__input--error');
+    isValid = false;
+  } else {
+    nameError.style.display = 'none';
+    nameInput.classList.remove('form__input--error');
+  }
+  if (!phoneValidate.test(phoneValue)) {
+    phoneError.textContent = 'Телефон не должен содержать буквы или символов отличных от "-"';
+    phoneError.style.display = 'block';
+    phoneInput.classList.add('form__input--error');
+    isValid = false;
+  } else {
+    phoneError.style.display = 'none';
+    phoneInput.classList.remove('form__input--error');
+  }
+
+  if (isValid) {
+    form.submit();
+  }
+};
+
+document.querySelector('.form__free').addEventListener('submit', validateForm);

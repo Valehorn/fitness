@@ -3,6 +3,7 @@ import { reviewsSwiperInit } from './swiper-reviews';
 import { faqTabsToggle } from './faq-tabs';
 import { faqAccordionToggle } from './accordion';
 import { changePriceTab } from './price-tab';
+import './validate-form';
 
 const bootStrap = () => {
   changePriceTab();

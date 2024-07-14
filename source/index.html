@@ -755,12 +755,16 @@
             <h2 class="form__title title">Бесплатное занятие</h2>
             <form class="form__free" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__input-container">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Имя"
-                  pattern="^[А-Яа-яa-zA-Z\s]+$" required>
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                  pattern="^[^а-яА-Яa-zA-Z]+$" required>
+                <div class="form__input-group">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input class="form__input form__name" type="text" name="name" id="name" placeholder="Имя" required>
+                  <p class="form__error form__name-error"></p>
+                </div>
+                <div class="form__input-group">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input class="form__input form__phone" type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <p class="form__error form__phone-error"></p>
+                </div>
               </div>
               <button class="button form__button button--primary" type="submit">Отправить</button>
             </form>

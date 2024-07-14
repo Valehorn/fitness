@@ -4,11 +4,10 @@ const priceTabList = document.querySelector('.price__tab-list');
 const tabItem = Array.from(document.querySelectorAll('.price__tab-item'));
 const cards = document.querySelectorAll('.card__price');
 
-
 const onTabItemClick = (evt) => {
-  const itemTarget = evt.target;
+  const itemTarget = evt.target.closest('.price__tab-item');
 
-  if (!itemTarget.classList.contains('price__tab-item')) {
+  if (!itemTarget) {
     return;
   }
 
