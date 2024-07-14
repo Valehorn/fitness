@@ -570,7 +570,7 @@
                   <div class="faq__details-list-marker"></div>
                 </div>
                 <h3>Где можно посмотреть расписание?</h3>
-                <p>Нигде.</p>
+                <p>На нашем замечательном сайте. На странице, которая нереализована.</p>
               </li>
               <li>
                 <div class="faq__details-list-marker-container">
@@ -684,20 +684,18 @@
     <section class="reviews container" data-test="reviews">
       <h2 class="reviews__title title">Отзывы</h2>
       <div class="swiper-overflow">
-        <button class="swiper-button-prev swiper-button-reviews-prev" type="button"><span
-          class="visually-hidden">Кнопка
-          слайдера
-          отзывов назад</span></button>
-      <button class="swiper-button-next swiper-button-reviews-next" type="button"><span
-          class="visually-hidden">Кнопка
-          слайдера
-          отзывов вперед</span></button>
+        <button class="swiper-button-prev swiper-button-reviews-prev" type="button">
+          <span class="visually-hidden">Кнопка слайдера отзывов назад</span>
+          </button>
+        <button class="swiper-button-next swiper-button-reviews-next" type="button">
+          <span class="visually-hidden">Кнопка слайдера отзывов вперед</span>
+          </button>
         <div class="swiper swiper-reviews">
           <div class="swiper-wrapper reviews__wrapper">
             <div class="swiper-slide">
               <article class="reviews__card">
                 <div>
-                  <picture>
+                  <!-- <picture>
                     <source type="image/webp" media="(max-resolution: 2dppx)"
                       srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="68"
                       height="68">
@@ -705,6 +703,20 @@
                       srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="68"
                       height="68">
                     <img src="img/reviews/reviews-photo@1x.png" alt="Фотография клиента." width="68" height="68">
+                  </picture> -->
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="80" height="80">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="80" height="80">
+                      <source type="image/webp" media="(max-resolution: 2dppx)"
+                      srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="68"
+                      height="68">
+                    <source type="image/png" media="(max-resolution: 2dppx)"
+                      srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="68"
+                      height="68">
+                    <img src="img/reviews/reviews-photo@1x.png" alt="Наш тренер супермен." width="68"
+                      height="68">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
@@ -716,13 +728,18 @@
               <article class="reviews__card">
                 <div>
                   <picture>
-                    <source type="image/webp" media="(max-resolution: 2dppx)"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="80" height="80">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="80" height="80">
+                      <source type="image/webp" media="(max-resolution: 2dppx)"
                       srcset="img/reviews/reviews-photo@1x.webp 1x, img/reviews/reviews-photo@2x.webp 2x" width="68"
                       height="68">
                     <source type="image/png" media="(max-resolution: 2dppx)"
                       srcset="img/reviews/reviews-photo@1x.png 1x, img/reviews/reviews-photo@2x.png 2x" width="68"
                       height="68">
-                    <img src="img/reviews/reviews-photo@1x.png" alt="Фотография клиента." width="68" height="68">
+                    <img src="img/reviews/reviews-photo@1x.png" alt="Наш тренер супермен." width="68"
+                      height="68">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
