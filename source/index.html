@@ -19,43 +19,43 @@
 </head>
 
 <body class="page-body">
-  <main class="page-main">
+  <section class="hero" data-test="hero">
     <h1 class="visually-hidden">Фитнес центр Омск</h1>
-    <section class="hero" data-test="hero">
-      <div class="container">
-        <h2 class="visually-hidden">Блок промо</h2>
-        <header class="header">
-          <img class="logo" src="img/logo.svg" alt="Фитнес Центр Омск." width="100" height="20" draggable="false">
-          <a class="header__phone-link" href="tel:88005555555">8 800 555-55-55</a>
-        </header>
-        <section class="hero__group">
-          <div class="hero__tablet-plus-container">
-            <ul class="hero__group-description-list">
-              <li class="hero__group-description">Тренажёрный зал</li>
-              <li class="hero__group-description">Групповые занятия</li>
-              <li class="hero__group-description">Кардио-зона</li>
-            </ul>
-            <div class="hero__title-container">
-              <h3 class="hero__group-subtitle title">Омск</h3>
-              <h2 class="hero__group-title">Фитнес Центр</h2>
-            </div>
-            <a class="button hero__group-button button--primary" href="#price" draggable="false">Купить абонемент</a>
+    <div class="container">
+      <h2 class="visually-hidden">Блок промо</h2>
+      <header class="header">
+        <img class="logo" src="img/logo.svg" alt="Фитнес Центр Омск." width="100" height="20" draggable="false">
+        <a class="header__phone-link" href="tel:88005555555">8 800 555-55-55</a>
+      </header>
+      <section class="hero__group">
+        <div class="hero__tablet-plus-container">
+          <ul class="hero__group-description-list">
+            <li class="hero__group-description">Тренажёрный зал</li>
+            <li class="hero__group-description">Групповые занятия</li>
+            <li class="hero__group-description">Кардио-зона</li>
+          </ul>
+          <div class="hero__title-container">
+            <h3 class="hero__group-subtitle title">Омск</h3>
+            <h2 class="hero__group-title">Фитнес Центр</h2>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/hero/hero-desktop@1x.webp 1x, img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/hero/hero-tablet@1x.webp 1x, img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/hero/hero-tablet@1x.jpg 1x, img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
-            <img class="hero__group-image" src="img/hero/hero-tablet@1x.jpg" alt="Наш тренер супермен." width="324"
-              height="390" draggable="false">
-          </picture>
-        </section>
-      </div>
-    </section>
+          <a class="button hero__group-button button--primary" href="#price" draggable="false">Купить абонемент</a>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/hero/hero-desktop@1x.webp 1x, img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/hero/hero-tablet@1x.webp 1x, img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
+          <source type="image/jpeg" media="(min-width: 1366px)"
+            srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+          <source type="image/jpeg" media="(min-width: 768px)"
+            srcset="img/hero/hero-tablet@1x.jpg 1x, img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
+          <img class="hero__group-image" src="img/hero/hero-tablet@1x.jpg" alt="Наш тренер супермен." width="324"
+            height="390" draggable="false">
+        </picture>
+      </section>
+    </div>
+  </section>
+  <main class="page-main">
     <section class="about" data-test="about" id="about">
       <div class="about__container container container--phone-none">
         <div class="about__text-container">
@@ -207,13 +207,13 @@
     <section class="juri container" data-test="juri" id="juri">
       <h2 class="juri__title title">Жюри</h2>
       <div class="swiper-overflow">
-        <button class="swiper-button-prev swiper__button-juri-prev" type="button">
+        <button class="swiper-button-prev swiper-button-juri-prev" type="button">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="swiper-button-next swiper__button-juri-next" type="button">
+        <button class="swiper-button-next swiper-button-juri-next" type="button">
           <span class="visually-hidden">Вперед</span>
         </button>
-        <div class="swiper swiper__juri">
+        <div class="swiper swiper-juri">
           <div class="swiper-wrapper">
             <div class="swiper-slide juri__swiper-slide">
               <article class="juri__card">
@@ -684,15 +684,15 @@
     <section class="reviews container" data-test="reviews">
       <h2 class="reviews__title title">Отзывы</h2>
       <div class="swiper-overflow">
-        <div class="swiper swiper__reviews">
-          <button class="swiper-button-prev swiper__button-reviews-prev" type="button"><span
-            class="visually-hidden">Кнопка
-            слайдера
-            отзывов назад</span></button>
-        <button class="swiper-button-next swiper__button-reviews-next" type="button"><span
-            class="visually-hidden">Кнопка
-            слайдера
-            отзывов вперед</span></button>
+        <button class="swiper-button-prev swiper-button-reviews-prev" type="button"><span
+          class="visually-hidden">Кнопка
+          слайдера
+          отзывов назад</span></button>
+      <button class="swiper-button-next swiper-button-reviews-next" type="button"><span
+          class="visually-hidden">Кнопка
+          слайдера
+          отзывов вперед</span></button>
+        <div class="swiper swiper-reviews">
           <div class="swiper-wrapper reviews__wrapper">
             <div class="swiper-slide">
               <article class="reviews__card">
