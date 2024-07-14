@@ -25,17 +25,15 @@
   z-index: 1;
 }
 
-.swiper__overflow {
+.swiper-overflow {
   position: relative;
 }
 
 .swiper {
-  display: block;
   position: relative;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
