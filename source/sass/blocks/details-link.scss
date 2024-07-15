@@ -58,4 +58,19 @@
       background-color: transparent;
     }
   }
+
+  &:active {
+    color: $primary-dark-blue-color;
+    opacity: 1;
+
+    &::after {
+      background-color: $primary-dark-blue-color;
+    }
+  }
+}
+
+.details-link--disabled {
+  opacity: 0.3;
+  cursor: none;
+  pointer-events: none;
 }
