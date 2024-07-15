@@ -76,6 +76,11 @@
     outline: 1px solid $primary-white-color;
   }
 
+  &:disabled {
+    opacity: 0.4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;

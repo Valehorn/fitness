@@ -18,11 +18,42 @@
 }
 
 .header__phone-link {
+  position: relative;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
   color: $primary-white-color;
   text-decoration: none;
+  padding-bottom: 6px;
+  transition: color 0.5s ease;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    transition: background 0.5s ease-in-out;
+  }
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus-visible {
+    color: $primary-dark-blue-color;
+  }
+
+  &:active {
+    color: $primary-dark-color;
+    outline: 1px solid transparent;
+
+    &::after {
+      background-color: $primary-dark-color;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -33,4 +64,11 @@
     font-size: 26px;
     line-height: 26px;
   }
+}
+
+.header__phone-link--disabled {
+  color: $bg-additional-color;
+  opacity: 0.5;
+  cursor: none;
+  pointer-events: none;
 }

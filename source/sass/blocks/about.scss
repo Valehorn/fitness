@@ -174,9 +174,26 @@
   width: 52px;
   height: 52px;
   border-radius: 100%;
-  background-image: linear-gradient(to right, #ed0233 0%, #003eb7 80%, #003eb7 100%);
+  background-image: linear-gradient(to right, #ed0233 8%, #003eb7 80%, #003eb7 100%);
   border: none;
   cursor: pointer;
+  transition: background-color 0.5s ease, width 0.5s ease, height 0.5s ease;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 12px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-play-view");
+    mask-size: 12px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary-white-color;
+    transition: background-color 0.5s ease;
+  }
 
   &::after {
     position: absolute;
@@ -188,11 +205,75 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid rgb(237, 2, 51, 0.3);
+    transition: border 0.5s ease;
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: $primary-white-color;
+
+    &::before {
+      background-color: rgba(16, 38, 84, 0.6);
+    }
+
+    &::after {
+      border: 2px solid rgba(16, 38, 84, 0.6);
+    }
+  }
+
+  &:focus-visible {
+    background-image: none;
+    background-color: #c8c9cc;
+    outline: 1px solid transparent;
+
+    &::before {
+      background-color: $primary-dark-color;
+    }
+
+    &::after {
+      border: 2px solid $primary-dark-color;
+    }
+  }
+
+  &:active {
+    background-image: none;
+    background-color: $primary-white-color;
+    width: 58px;
+    height: 58px;
+
+    &::before {
+      background-color: $primary-dark-color;
+    }
+
+    &::after {
+      border: 2px solid $primary-dark-color;
+    }
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $primary-white-color;
+    opacity: 0.4;
+    pointer-events: none;
+
+    &::before {
+      background-color: $primary-dark-color;
+    }
+
+    &::after {
+      border: 2px solid $primary-dark-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 72px;
     height: 72px;
+
+    &::before {
+      width: 17px;
+      height: 17px;
+      mask-size: 17px 17px;
+    }
 
     &::after {
       width: 100px;
