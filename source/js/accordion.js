@@ -24,12 +24,19 @@ const onAccordionItemClick = (evt) => {
   content.style.height = isActive ? `${content.scrollHeight}px` : '0';
 };
 
+const onAccordionItemKeydown = (evt) => {
+  if (evt.key === 'Enter') {
+    onAccordionItemClick(evt);
+  }
+};
+
 const faqAccordionToggle = () => {
   if (!faqDetailsListContainer) {
     return;
   }
   faqListFirstItemFind();
   faqDetailsListContainer.addEventListener('click', onAccordionItemClick);
+  faqDetailsListContainer.addEventListener('keydown', onAccordionItemKeydown);
 };
 
 export { faqAccordionToggle };

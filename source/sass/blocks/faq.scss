@@ -67,7 +67,12 @@
   min-width: 140px;
   min-height: 46px;
   padding: 15px 20px;
-  transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in, border 0.3s ease;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
 
   &::before {
     content: "";
@@ -79,6 +84,46 @@
     background-image: linear-gradient(to right, #ed0233 20%, #003eb7 78%);
     opacity: 0;
     transition: opacity 0.3s ease-in;
+  }
+
+  &:hover {
+    border: 1px solid $primary-dark-color;
+    color: $primary-dark-color;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &:focus-visible {
+    background-color: $primary-white-color;
+    color: $primary-dark-color;
+    border: 1px solid $primary-dark-color;
+    outline: 1px solid transparent;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    color: $primary-white-color;
+    border: 1px solid transparent;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    pointer-events: none;
+    cursor: none;
+
+    &::before {
+      opacity: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -96,12 +141,7 @@
 
 .faq__tab-button--active {
   color: $primary-white-color;
-  border: none;
-
-  span {
-    position: relative;
-    z-index: 1;
-  }
+  border: 1px solid transparent;
 
   &::before {
     opacity: 1;
@@ -238,4 +278,39 @@
   &::after {
     transform: translate(-50%, -50%) rotate(90deg);
   }
+}
+
+.faq__details-list-marker--disbaled {
+  opacity: 0.3;
+}
+
+/* Состояния вкладок аккордиона */
+
+
+.faq__details-list li:focus-visible {
+  outline: 1px solid transparent;
+}
+
+.faq__details-list li:hover .faq__details-list-marker {
+  background-color: $primary-dark-blue-color;
+
+  &::before,
+  &::after {
+    background-color: $primary-white-color;
+  }
+}
+
+.faq__details-list li:focus-visible .faq__details-list-marker {
+  background-color: #74819c;
+  outline: 1px solid transparent;
+
+  &::before,
+  &::after {
+    background-color: $primary-white-color;
+  }
+}
+
+.faq__details-list li:has(.faq__details-list-marker--disbaled) {
+  pointer-events: none;
+  cursor: none;
 }
