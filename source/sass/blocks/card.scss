@@ -174,9 +174,9 @@
   &:focus-visible {
     color: $primary-white-color;
     outline: 2px solid transparent;
+    border-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%) 1;
 
     &::before {
-      background-image: linear-gradient(to right, rgba(237, 2, 51, 0.8) 13%, rgba(0, 62, 183, 0.8) 100%);
       opacity: 1;
     }
   }
@@ -202,6 +202,7 @@
   pointer-events: none;
   cursor: none;
 }
+
 
 .card__button-text {
   position: relative;
