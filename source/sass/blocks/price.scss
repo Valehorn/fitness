@@ -89,6 +89,30 @@
     transition: background-color 0.5s ease-in-out;
   }
 
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+
+    &::after {
+      background-color: #787878;
+    }
+  }
+
+  &:focus-visible {
+    color: $primary-dark-color;
+
+    &::after {
+      background-color: $primary-dark-color;
+    }
+  }
+
+  &:active {
+    color: $primary-dark-color;
+
+    &::after {
+      background-color: $bg-banners-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
@@ -105,6 +129,16 @@
 
   &::after {
     background-color: $button-tabs-stages-color;
+  }
+}
+
+.price__tab-item--disabled {
+  color: rgba(16, 38, 84, 0.3);
+  pointer-events: none;
+  cursor: none;
+
+  &::after {
+    background-color: rgba(16, 38, 84, 0.3);
   }
 }
 

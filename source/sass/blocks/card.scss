@@ -1,6 +1,7 @@
 @use "../global/variables.scss";
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,16 +13,40 @@
   width: 290px;
   min-height: 384px;
 
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 290px;
+    min-height: 384px;
+    transition: border 0.1s ease;
+  }
+
+  &:focus-within::before {
+    border: 7px solid transparent;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
+  }
+
   @media (min-width: $tablet-width) {
     width: 380px;
     min-height: 460px;
     padding: 65px;
+
+    &::before {
+      width: 380px;
+      min-height: 460px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
     min-height: 447px;
     padding: 65px;
+
+    &::before {
+      width: 360px;
+      min-height: 447px;
+    }
   }
 }
 
@@ -119,12 +144,66 @@
 }
 
 .card__button {
+  position: relative;
   min-width: 100%;
   min-height: 66px;
   padding: 25px 22px;
+  transition: color 0.5s ease-in, border 0.5s ease-in;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%);
+    opacity: 0;
+    min-width: 100%;
+    min-height: 66px;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover {
+    color: $primary-white-color;
+    border-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%) 1;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    color: $primary-white-color;
+    outline: 2px solid transparent;
+
+    &::before {
+      background-image: linear-gradient(to right, rgba(237, 2, 51, 0.8) 13%, rgba(0, 62, 183, 0.8) 100%);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    border-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%) 1;
+
+    &::before {
+      opacity: 1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
     padding-bottom: 27px;
   }
+}
+
+.card__button--disabled {
+  color: rgba(16, 38, 84, 0.3);
+  border: 2px solid rgba(16, 38, 84, 0.3);
+  pointer-events: none;
+  cursor: none;
+}
+
+.card__button-text {
+  position: relative;
+  z-index: 1;
 }
