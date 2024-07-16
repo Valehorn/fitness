@@ -87,6 +87,14 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+
+    &::after {
+      bottom: -5px;
+    }
+  }
 }
 
 .games__list-description {
@@ -105,6 +113,12 @@
 
     &:first-of-type {
       margin-bottom: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      margin-bottom: 21px;
     }
   }
 }
@@ -184,3 +198,9 @@
   cursor: none;
   pointer-events: none;
 }
+
+/* .test {
+  @media (max-width: $pre-desktop-width) {
+    display: contents;
+  }
+} */
