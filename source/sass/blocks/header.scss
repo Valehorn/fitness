@@ -12,10 +12,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
+
+/* .header__logo-container {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+} */
 
 .header__phone-link {
   position: relative;
