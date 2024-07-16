@@ -3,7 +3,7 @@
 .features {
   background-color: $bg-additional-color;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
 
   li:not(:has(div)) article {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 
   li:not(:has(div)) h3 {
@@ -83,7 +83,7 @@
   }
 
   li:has(div) h3 {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   p:first-of-type span:first-of-type {
@@ -244,6 +244,9 @@
 
   @media (max-width: $pre-tablet-width) {
     article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin: 0 auto;
       min-width: $phone-width;
       max-width: $phone-width;
@@ -251,18 +254,35 @@
       padding-right: $phone-padding-x;
     }
 
-    li:nth-of-type(1) article,
-    li:nth-of-type(4) article {
-      margin-bottom: 35px;
+    li:nth-of-type(1),
+    li:nth-of-type(4) {
+      margin-bottom: 34px;
     }
 
-    li:nth-of-type(2) article,
-    li:not(:has(div)) article {
-      margin-bottom: 40px;
+    li:nth-of-type(2) {
+      margin-bottom: 38px;
+    }
+
+    li:not(:has(div)) {
+      margin-bottom: 39px;
     }
 
     li:has(div) div {
-      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li:has(div) div:first-of-type {
+      margin-bottom: 10px;
+    }
+
+    li:has(div):not(:first-of-type) p {
+      width: 230px;
+    }
+
+    li:not(:has(div)) p {
+      width: 170px;
     }
   }
 }
