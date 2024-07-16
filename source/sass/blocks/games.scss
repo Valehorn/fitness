@@ -11,7 +11,7 @@
     padding-bottom: 60px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -61,6 +61,10 @@
 
 .games__list {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
 }
 
 .games__list-title {
@@ -97,6 +101,11 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;
+    gap: 6px;
+
+    &:first-of-type {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -104,6 +113,10 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
@@ -151,9 +164,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 66px;
-    padding-top: 27px;
-    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
