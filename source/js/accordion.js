@@ -1,15 +1,5 @@
 const faqDetailsListContainer = document.querySelector('.faq__details-lists-container');
 
-/* const changeMargin = (header, breakpoint) => {
-  if (breakpoint >= 320 && breakpoint <= 767) {
-    header.style.marginBottom = '20px';
-  } else if (breakpoint >= 768 && breakpoint <= 1355) {
-    header.style.marginBottom = '19px';
-  } else if (breakpoint > 1355) {
-    header.style.marginBottom = '31px';
-  }
-};
- */
 const faqListFirstItemFind = () => {
   const firstItem = document.querySelector('.faq__details-list li');
   if (firstItem) {
@@ -19,7 +9,6 @@ const faqListFirstItemFind = () => {
     if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
       firstDescription.style.height = `${firstDescription.scrollHeight}px`;
     }
-    /* changeMargin(header, window.screen.width); */
   }
 };
 
@@ -31,16 +20,9 @@ const onAccordionItemClick = (evt) => {
 
   const marker = item.querySelector('.faq__details-list-marker');
   const content = item.querySelector('p');
-  /* const header = item.querySelector('h3'); */
 
   const isActive = marker.classList.toggle('faq__details-list-marker--active');
   content.style.height = isActive ? `${content.scrollHeight}px` : '0';
-
-  /* if (isActive) {
-    changeMargin(header, window.screen.width);
-  } else {
-    header.style.marginBottom = '0';
-  } */
 };
 
 const onAccordionItemKeydown = (evt) => {
