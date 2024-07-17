@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +48,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 45px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,8 +82,8 @@
     position: absolute;
     top: -2px;
     left: -1px;
-    width: 140px;
-    height: 46px;
+    min-width: 140px;
+    min-height: 46px;
     background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 0;
     transition: opacity 0.3s ease-in;
@@ -134,7 +134,12 @@
     line-height: 18px;
     min-width: 162px;
     min-height: 54px;
-    padding: 18px;
+    padding: 10px;
+
+    &::before {
+      min-width: 162px;
+      min-height: 54px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -167,6 +172,7 @@
     position: relative;
     padding-right: 35px;
     cursor: pointer;
+    margin-bottom: 41px;
   }
 
   li:first-child::before {
@@ -205,11 +211,14 @@
     height: 0;
     overflow: hidden;
     margin: 0;
-    margin-bottom: 41px;
     transition: height 0.5s ease-out;
   }
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+
     h3 {
       font-size: 22px;
       line-height: 22px;
@@ -219,6 +228,47 @@
     p {
       font-size: 18px;
       line-height: 24px;
+      width: 560px;
+    }
+
+    li:nth-of-type(1) {
+      margin-bottom: 55px;
+    }
+
+    li:nth-of-type(2) {
+      margin-bottom: 48px;
+    }
+
+    li:nth-of-type(3) {
+      margin-bottom: 38px;
+    }
+
+    li:nth-of-type(4) h3 {
+      width: 500px;
+    }
+
+    li:has(.faq__details-list-marker--active) h3 {
+      margin-bottom: 18px;
+    }
+
+    li:first-child::before {
+      top: -34px;
+    }
+
+    li:nth-of-type(1)::after {
+      bottom: -24px;
+    }
+
+    li:nth-of-type(2)::after {
+      bottom: -15px;
+    }
+
+    li:nth-of-type(3)::after {
+      bottom: -13px;
+    }
+
+    li:nth-of-type(4)::after {
+      bottom: -3px;
     }
   }
 
@@ -243,11 +293,26 @@
 li:nth-of-type(1) .faq__details-list-marker-container,
 li:nth-of-type(2) .faq__details-list-marker-container {
   top: 4px;
+
+  @media (min-width: $tablet-width) {
+    top: -9px;
+  }
 }
 
-li:nth-of-type(3) .faq__details-list-marker-container,
+li:nth-of-type(3) .faq__details-list-marker-container {
+  top: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+  }
+}
+
 li:nth-of-type(4) .faq__details-list-marker-container {
   top: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .faq__details-list-marker {
