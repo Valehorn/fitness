@@ -40,11 +40,11 @@
 .faq__tab-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 7px;
+  gap: 9px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
@@ -60,13 +60,16 @@
 
 .faq__tab-button {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: none;
   min-width: 140px;
   min-height: 46px;
-  padding: 15px 20px;
+  padding: 0 20px;
   transition: color 0.3s ease-in, border 0.3s ease;
 
   span {
@@ -79,8 +82,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 46px;
     background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 0;
     transition: opacity 0.3s ease-in;
@@ -162,9 +165,6 @@
 
   li {
     position: relative;
-
-    /* padding-top: 21px;
-    padding-bottom: 21px; */
     padding-right: 35px;
     cursor: pointer;
   }
@@ -193,8 +193,6 @@
     line-height: 20px;
     margin: 0;
     transition: margin-bottom 0.5s ease;
-
-    /* margin-bottom: 20px; */
   }
 
   p {
@@ -233,9 +231,17 @@
   display: block;
 }
 
-.faq__details-list-marker-container {
+li:nth-of-type(1) .faq__details-list-marker-container,
+li:nth-of-type(2) .faq__details-list-marker-container {
   position: absolute;
-  top: 4px;
+  top: 2%;
+  right: 0;
+}
+
+li:nth-of-type(3) .faq__details-list-marker-container,
+li:nth-of-type(4) .faq__details-list-marker-container {
+  position: absolute;
+  top: 14px;
   right: 0;
 }
 
