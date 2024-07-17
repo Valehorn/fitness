@@ -40,11 +40,11 @@
 .faq__tab-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 7px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
@@ -81,7 +81,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #ed0233 20%, #003eb7 78%);
+    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     opacity: 0;
     transition: opacity 0.3s ease-in;
   }
@@ -162,15 +162,29 @@
 
   li {
     position: relative;
-    border-top: 1px solid #74819c;
-    padding-top: 21px;
-    padding-bottom: 21px;
+
+    /* padding-top: 21px;
+    padding-bottom: 21px; */
     padding-right: 35px;
     cursor: pointer;
   }
 
-  li:last-child {
-    border-bottom: 1px solid #74819c;
+  li:first-child::before {
+    position: absolute;
+    top: -20px;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #74819c;
+  }
+
+  li::after {
+    position: absolute;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #74819c;
   }
 
   h3 {
@@ -178,7 +192,9 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
-    margin-bottom: 20px;
+    transition: margin-bottom 0.5s ease;
+
+    /* margin-bottom: 20px; */
   }
 
   p {
@@ -187,6 +203,7 @@
     height: 0;
     overflow: hidden;
     margin: 0;
+    margin-bottom: 41px;
     transition: height 0.5s ease-out;
   }
 
@@ -218,6 +235,7 @@
 
 .faq__details-list-marker-container {
   position: absolute;
+  top: 4px;
   right: 0;
 }
 
