@@ -3,11 +3,11 @@
 .faq {
   background-color: $bg-additional-color;
   padding-top: 71px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -180,6 +180,10 @@
     padding-right: 35px;
     cursor: pointer;
     margin-bottom: 41px;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
   }
 
   li:first-child::before {
