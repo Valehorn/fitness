@@ -107,7 +107,7 @@
 
     div {
       align-items: flex-start;
-      height: 98%;
+      height: 100%;
     }
 
     h3 {
@@ -136,6 +136,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 280px;
+    padding-left: 45px;
+
+    div {
+      height: 99%;
+    }
+
     h3 {
       font-size: 26px;
       line-height: 26px;
@@ -200,7 +207,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 174px;
-    width: 562px;
+    width: 560px;
   }
 
   h3 {
