@@ -2,8 +2,8 @@
 
 .faq {
   background-color: $bg-additional-color;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 71px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
@@ -40,7 +40,7 @@
 .faq__tab-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 9px;
+  gap: 9px 9px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -80,8 +80,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -1px;
     width: 140px;
     height: 46px;
     background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -171,7 +171,7 @@
 
   li:first-child::before {
     position: absolute;
-    top: -20px;
+    top: -21px;
     content: "";
     height: 1px;
     width: 100%;
@@ -180,11 +180,15 @@
 
   li::after {
     position: absolute;
-    bottom: -20px;
+    bottom: -21px;
     content: "";
     height: 1px;
     width: 100%;
     background-color: #74819c;
+  }
+
+  li:has(.faq__details-list-marker--active) h3 {
+    margin-bottom: 20px;
   }
 
   h3 {
@@ -231,18 +235,19 @@
   display: block;
 }
 
+.faq__details-list-marker-container {
+  position: absolute;
+  right: 0;
+}
+
 li:nth-of-type(1) .faq__details-list-marker-container,
 li:nth-of-type(2) .faq__details-list-marker-container {
-  position: absolute;
-  top: 2%;
-  right: 0;
+  top: 4px;
 }
 
 li:nth-of-type(3) .faq__details-list-marker-container,
 li:nth-of-type(4) .faq__details-list-marker-container {
-  position: absolute;
   top: 14px;
-  right: 0;
 }
 
 .faq__details-list-marker {

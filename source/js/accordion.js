@@ -1,6 +1,6 @@
 const faqDetailsListContainer = document.querySelector('.faq__details-lists-container');
 
-const changeMargin = (header, breakpoint) => {
+/* const changeMargin = (header, breakpoint) => {
   if (breakpoint >= 320 && breakpoint <= 767) {
     header.style.marginBottom = '20px';
   } else if (breakpoint >= 768 && breakpoint <= 1355) {
@@ -9,17 +9,17 @@ const changeMargin = (header, breakpoint) => {
     header.style.marginBottom = '31px';
   }
 };
-
+ */
 const faqListFirstItemFind = () => {
   const firstItem = document.querySelector('.faq__details-list li');
   if (firstItem) {
     const firstDescription = firstItem.querySelector('p');
     const marker = firstItem.querySelector('.faq__details-list-marker');
-    const header = firstItem.querySelector('h3');
+    /* const header = firstItem.querySelector('h3'); */
     if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
       firstDescription.style.height = `${firstDescription.scrollHeight}px`;
     }
-    changeMargin(header, window.screen.width);
+    /* changeMargin(header, window.screen.width); */
   }
 };
 
@@ -31,16 +31,16 @@ const onAccordionItemClick = (evt) => {
 
   const marker = item.querySelector('.faq__details-list-marker');
   const content = item.querySelector('p');
-  const header = item.querySelector('h3');
+  /* const header = item.querySelector('h3'); */
 
   const isActive = marker.classList.toggle('faq__details-list-marker--active');
   content.style.height = isActive ? `${content.scrollHeight}px` : '0';
 
-  if (isActive) {
+  /* if (isActive) {
     changeMargin(header, window.screen.width);
   } else {
     header.style.marginBottom = '0';
-  }
+  } */
 };
 
 const onAccordionItemKeydown = (evt) => {
