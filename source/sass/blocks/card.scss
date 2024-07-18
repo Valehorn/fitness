@@ -161,9 +161,9 @@
     left: 0;
     background-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%);
     opacity: 0;
-    min-width: 100%;
-    min-height: 66px;
-    transition: opacity 0.5s ease;
+    width: calc(100% + 1px);
+    height: calc(100% + 2px);
+    transition: opacity 0.5s ease-in;
   }
 
   &:hover {
