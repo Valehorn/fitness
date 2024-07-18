@@ -22,7 +22,7 @@ const validateForm = (evt) => {
     nameInput.classList.remove('form__input--error');
   }
   if (!phoneValidate.test(phoneValue)) {
-    phoneError.textContent = 'Телефон не должен содержать буквы или символов отличных от "-"';
+    phoneError.textContent = 'Телефон не должен содержать буквы или символов отличных от "-", не меньше 11 цифр';
     phoneError.style.display = 'block';
     phoneInput.classList.add('form__input--error');
     isValid = false;
