@@ -59,6 +59,20 @@
 
 .form__input-group {
   position: relative;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #74819c;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 223.5px;
+  }
 }
 
 .form__input {
@@ -96,8 +110,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 223px;
+    width: 221px;
     height: 26px;
+    border: 1px solid transparent;
   }
 }
 
