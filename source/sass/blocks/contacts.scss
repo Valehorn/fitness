@@ -1,7 +1,7 @@
 @use "../global/variables";
 
 .contacts {
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
 }
 
 .contacts__title {
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
