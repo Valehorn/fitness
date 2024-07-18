@@ -10,6 +10,11 @@
     padding-top: 45px;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer__container {
