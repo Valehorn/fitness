@@ -63,7 +63,8 @@
     gap: 15px 129px;
 
     &::after {
-      left: 51%;
+      height: calc(100% - 2px);
+      left: calc(51% + 1px);
     }
   }
 }
