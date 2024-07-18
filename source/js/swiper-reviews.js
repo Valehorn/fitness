@@ -5,6 +5,7 @@ import '../sass/vendor/swiper.scss';
 const reviewsSwiperContainer = document.querySelector('.swiper-reviews');
 
 const reviewsSwiperInit = () => {
+  const breakpoint = window.innerWidth;
   const reviewsSwiper = new Swiper(reviewsSwiperContainer, {
     modules: [Navigation],
     speed: 600,
@@ -16,6 +17,7 @@ const reviewsSwiperInit = () => {
       nextEl: '.swiper-button-reviews-next',
       prevEl: '.swiper-button-reviews-prev',
     },
+    allowTouchMove: breakpoint < 1366,
     on: {
       slideChange: () => {
         updateReviewsButtons();

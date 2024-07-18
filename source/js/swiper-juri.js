@@ -5,6 +5,7 @@ import '../sass/vendor/swiper.scss';
 const juriSwiperContainer = document.querySelector('.swiper-juri');
 
 const juriSwiperInit = () => {
+  const breakpoint = window.innerWidth;
   new Swiper(juriSwiperContainer, {
     modules: [Navigation],
     speed: 600,
@@ -14,6 +15,7 @@ const juriSwiperInit = () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    allowTouchMove: breakpoint < 1366,
     breakpoints: {
       320: {
         slidesPerView: 1,
