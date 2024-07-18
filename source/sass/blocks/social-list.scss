@@ -20,6 +20,7 @@
 .social-list__link {
   --social-icon: 0;
   --social-size: 0;
+  --social-position: center;
 
   position: relative;
   display: block;
@@ -39,8 +40,8 @@
     height: 100%;
     mask-image: var(--social-icon);
     mask-size: var(--social-size);
+    mask-position: var(--social-position);
     mask-repeat: no-repeat;
-    mask-position: center;
     background-color: $bg-footer-black-color;
     transition: background-color 0.5s ease;
   }
