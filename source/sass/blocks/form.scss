@@ -59,24 +59,11 @@
 
 .form__input-group {
   position: relative;
-
-  &::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #74819c;
-  }
-
-  &:has(.form__input--error)::after {
-    background-color: $form-error-color;
-  }
 }
 
 .form__input {
   font-weight: 400;
+  appearance: none;
   color: $primary-white-color;
   font-size: 14px;
   line-height: 22px;
@@ -102,6 +89,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  &::placeholder {
+    transform: translateX(-3px);
+    color: #74819c;
+    font-weight: 300;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;
@@ -112,23 +105,12 @@
   @media (min-width: $desktop-width) {
     width: 223.5px;
     height: 26px;
-    border: 1px solid transparent;
   }
 }
 
 .form__input--error {
   border-bottom-color: $form-error-color;
-
-  @media (min-width: $desktop-width) {
-    border-bottom-color: transparent;
-  }
 }
-
-.form__input::placeholder {
-  color: #74819c;
-  font-weight: 300;
-}
-
 
 .form__error {
   display: none;
