@@ -73,16 +73,28 @@
 .social-list__link--vk {
   --social-icon: url("/__spritemap#sprite-vk-view");
   --social-size: 12.04px 6.94px;
+
+  @media (min-width: $desktop-width) {
+    --social-size: 13.04px 7.94px;
+  }
 }
 
 .social-list__link--classmates {
   --social-icon: url("/__spritemap#sprite-classmates-view");
   --social-size: 8.83px 15.73px;
+
+  @media (min-width: $desktop-width) {
+    --social-size: 9.83px 16.73px;
+  }
 }
 
 .social-list__link--reddit {
   --social-icon: url("/__spritemap#sprite-reddit-view");
   --social-size: 13.89px 13.89px;
+
+  @media (min-width: $desktop-width) {
+    --social-size: 14.89px 14.8px;
+  }
 }
 
 .social-list__link--disabled {
