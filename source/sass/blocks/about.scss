@@ -114,10 +114,19 @@
   @media (min-width: $desktop-width) {
     bottom: 10px;
   }
+
+  @media (max-width: $pre-tablet-width) {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .about__video-plug {
   position: relative;
+}
+
+.about__video-plug--close {
+  display: none;
 }
 
 .about__video-plug-image-container {
@@ -284,6 +293,16 @@
 
 .about__video {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    height: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+  }
 }
 
 .about__video--open {
