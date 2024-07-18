@@ -58,7 +58,5 @@ const reviewsSwiperInit = () => {
   updateReviewsButtons();
 };
 
-//Поиск всех методов свайпера для лока и запрета прокрутки кнопки занял 5 часов.
-
 export { reviewsSwiperInit };
 

@@ -3,12 +3,13 @@ import { reviewsSwiperInit } from './swiper-reviews';
 import { faqTabsToggle } from './faq-tabs';
 import { faqAccordionToggle } from './accordion';
 import { changePriceTab } from './price-tab';
+import { checkBreakpointchange } from './utils';
 import './validate-form';
 
 const bootStrap = () => {
   changePriceTab();
   juriSwiperInit();
-  reviewsSwiperInit();
+  checkBreakpointchange(reviewsSwiperInit);
   faqTabsToggle();
   faqAccordionToggle();
 };

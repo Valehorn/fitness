@@ -39,6 +39,10 @@
     line-height: 54px;
     margin-bottom: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .form__input-container {

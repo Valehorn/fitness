@@ -13,10 +13,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     align-items: flex-start;
     min-width: 0;
     max-width: 683px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     margin: 0;
   }
 }
@@ -59,7 +60,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 15px 121px;
+    gap: 15px 130px;
+
+    &::after {
+      left: 51%;
+    }
   }
 }
 
@@ -76,6 +81,12 @@
       width: 190px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      width: auto;
+    }
+  }
 }
 
 .contacts__item-title {
@@ -89,6 +100,10 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
   }
 }
 
