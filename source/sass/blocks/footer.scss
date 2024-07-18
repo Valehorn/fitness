@@ -15,7 +15,6 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -29,12 +28,16 @@
 }
 
 .footer__logo-container {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     margin-right: 35.5px;
   }
 }
 
 .footer__nav {
+  margin-bottom: 29px;
+
   @media (min-width: $tablet-width) {
     margin-right: 35.5px;
   }
@@ -47,7 +50,7 @@
 .footer__nav-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 35px;
+  gap: 17px 35px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -66,6 +69,7 @@
 
 .footer__nav-link {
   position: relative;
+  line-height: 22px;
   text-decoration: none;
   color: $primary-white-color;
   font-weight: 400;
