@@ -69,6 +69,10 @@
     width: 100%;
     background-color: #74819c;
   }
+
+  &:has(.form__input--error)::after {
+    background-color: $form-error-color;
+  }
 }
 
 .form__input {
@@ -114,6 +118,10 @@
 
 .form__input--error {
   border-bottom-color: $form-error-color;
+
+  @media (min-width: $desktop-width) {
+    border-bottom-color: transparent;
+  }
 }
 
 .form__input::placeholder {
