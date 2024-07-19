@@ -293,6 +293,7 @@
 
 .about__video {
   display: none;
+  border: 1px solid transparent;
 
   @media (min-width: $tablet-width) {
     width: 270px;
