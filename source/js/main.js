@@ -1,4 +1,4 @@
-import { openVideo, checkIframeDisplay } from './video';
+import { openVideo } from './video';
 import { juriSwiperInit } from './swiper-juri';
 import { reviewsSwiperInit } from './swiper-reviews';
 import { faqTabsToggle } from './faq-tabs';
@@ -7,7 +7,6 @@ import { changePriceTab } from './price-tab';
 import './validate-form';
 
 const bootStrap = () => {
-  checkIframeDisplay();
   openVideo();
   changePriceTab();
   juriSwiperInit();
