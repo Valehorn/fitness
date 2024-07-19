@@ -18,7 +18,7 @@
     top: 0;
     content: "";
     width: 100%;
-    min-height: 384px;
+    height: 100%;
     pointer-events: none;
     transition: border 0.1s ease;
   }
@@ -28,7 +28,7 @@
     top: 0;
     content: "";
     width: 100%;
-    min-height: 384px;
+    height: 100%;
     pointer-events: none;
     opacity: 0;
     border: 7px solid transparent;
@@ -48,28 +48,12 @@
     padding-bottom: 63px;
     padding-left: 65px;
     padding-right: 65px;
-
-    &::before {
-      min-height: 460px;
-    }
-
-    &::after {
-      min-height: 460px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
     min-height: 447px;
     padding: 65px;
-
-    &::before {
-      min-height: 447px;
-    }
-
-    &::after {
-      min-height: 447px;
-    }
   }
 }
 

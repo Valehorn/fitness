@@ -5,7 +5,6 @@ const faqListFirstItemFind = () => {
   if (firstItem) {
     const firstDescription = firstItem.querySelector('p');
     const marker = firstItem.querySelector('.faq__details-list-marker');
-    /* const header = firstItem.querySelector('h3'); */
     if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
       firstDescription.style.height = `${firstDescription.scrollHeight}px`;
     }

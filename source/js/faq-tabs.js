@@ -2,7 +2,7 @@ const faqTabList = document.querySelector('.faq__tab-list');
 const faqDetailsList = document.querySelectorAll('.faq__details-list');
 const faqTabButtons = document.querySelectorAll('.faq__tab-button');
 
-const faqListsDisplayChange = (evt) => {
+const faqListChange = (evt) => {
   const buttonTarget = evt.target.closest('.faq__tab-button');
   if (!buttonTarget) {
     return;
@@ -40,7 +40,7 @@ const onFaqTabButtonClick = (evt) => {
     faqTabItem.classList.add('faq__tab-item--active');
     buttonTarget.classList.add('faq__tab-button--active');
   }
-  faqListsDisplayChange(evt);
+  faqListChange(evt);
 };
 
 const faqTabsToggle = () => {
