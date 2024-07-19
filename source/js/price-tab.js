@@ -16,7 +16,7 @@ const onTabItemClick = (evt) => {
   const tabIndex = tabItem.indexOf(itemTarget);
 
   cards.forEach((price, index) => {
-    const newPrice = priceTabs[tabIndex][`price${index + 1}`]; //получение доступа к полям объекта (price1-3)
+    const newPrice = priceTabs[tabIndex][`price${index + 1}`]; //получение доступа к полям объектов (price1-3)
     price.querySelector('.card__price-decoration').textContent = newPrice;
     price.querySelector('.card__price-text').textContent = newPrice;
   });

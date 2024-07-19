@@ -34,7 +34,7 @@ const validatePhone = () => {
   }
 };
 
-const validateForm = (evt) => {
+const onValidateFormSubmit = (evt) => {
   evt.preventDefault();
   isValid = true;
   validateName();
@@ -46,4 +46,4 @@ const validateForm = (evt) => {
   }
 };
 
-form.addEventListener('submit', validateForm);
+form.addEventListener('submit', onValidateFormSubmit);
