@@ -30,5 +30,3 @@ const changePriceTab = () => {
 };
 
 export { changePriceTab };
-
-

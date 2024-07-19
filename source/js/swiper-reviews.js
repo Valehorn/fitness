@@ -59,4 +59,3 @@ const reviewsSwiperInit = () => {
 };
 
 export { reviewsSwiperInit };
-
