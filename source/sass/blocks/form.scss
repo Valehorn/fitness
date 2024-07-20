@@ -95,8 +95,9 @@
 
   &::placeholder {
     transform: translateX(-3px);
-    color: #74819c;
+    color: $primary-white-color;
     font-weight: 300;
+    opacity: 0.4;
   }
 
   @media (min-width: $tablet-width) {
