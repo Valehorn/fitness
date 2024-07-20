@@ -125,7 +125,8 @@
   }
 
   &:focus-visible {
-    outline: 1px solid transparent;
+    outline: 1px solid #000000;
+    outline-offset: 2px;
   }
 
   &:active {
