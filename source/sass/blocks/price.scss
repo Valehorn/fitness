@@ -84,7 +84,7 @@
   font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
 
   &::after {
     position: absolute;
@@ -94,7 +94,7 @@
     width: 100%;
     height: 2px;
     background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
   }
 
   &:hover {
@@ -107,6 +107,7 @@
 
   &:focus-visible {
     color: $primary-dark-color;
+    outline: 1px solid transparent;
 
     &::after {
       background-color: $primary-dark-color;

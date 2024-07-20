@@ -41,6 +41,15 @@
       background-color: transparent;
     }
   }
+
+  &:active {
+    color: $primary-white-color;
+    opacity: 1;
+
+    &::after {
+      background-color: $primary-white-color;
+    }
+  }
 }
 
 .details-link--secondary {

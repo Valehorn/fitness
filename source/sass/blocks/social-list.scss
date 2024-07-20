@@ -56,6 +56,7 @@
 
   &:focus-visible {
     background-color: $primary-dark-blue-color;
+    outline: 1px solid transparent;
 
     &::after {
       background-color: $primary-white-color;

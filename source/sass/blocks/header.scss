@@ -44,6 +44,7 @@
 
   &:focus-visible {
     color: $primary-dark-blue-color;
+    outline: 1px solid transparent;
   }
 
   &:active {

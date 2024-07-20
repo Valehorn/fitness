@@ -271,6 +271,10 @@
   justify-content: center;
   border: 1px solid transparent;
   background-color: transparent;
+
+  &:focus-visible {
+    outline: 1px solid transparent;
+  }
 }
 
 /* Класс disabled для кнопок swiper */
