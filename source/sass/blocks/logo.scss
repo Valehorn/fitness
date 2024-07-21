@@ -1,6 +1,7 @@
 @use "../global/variables.scss";
 
 .logo {
+  display: block;
   object-fit: cover;
   width: 100px;
   height: 20px;

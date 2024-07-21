@@ -12,7 +12,7 @@ const faqListFirstItemFind = () => {
 };
 
 const onAccordionItemClick = (evt) => {
-  const item = evt.target.closest('li');
+  const item = evt.target.closest('.faq__details-list li');
   if (!item) {
     return;
   }
@@ -40,9 +40,10 @@ const faqAccordionToggle = () => {
   if (!faqDetailsListContainer) {
     return;
   }
-  faqListFirstItemFind();
   faqDetailsListContainer.addEventListener('click', onAccordionItemClick);
   faqDetailsListContainer.addEventListener('keydown', onAccordionItemKeydown);
 };
+
+faqListFirstItemFind();
 
 export { faqAccordionToggle };

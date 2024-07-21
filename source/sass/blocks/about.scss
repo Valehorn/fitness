@@ -104,6 +104,10 @@
   }
 }
 
+.about__image {
+  display: block;
+}
+
 .about__video-container {
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -158,6 +162,7 @@
 }
 
 .about__video-image {
+  display: block;
   width: 320px;
   height: 170px;
 

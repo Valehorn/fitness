@@ -60,6 +60,10 @@
     margin: 0;
   }
 
+  img {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 40px;
