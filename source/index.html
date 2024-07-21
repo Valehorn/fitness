@@ -27,8 +27,14 @@
       <h2 class="visually-hidden">Блок промо</h2>
       <header class="header">
         <div class="header__logo-container">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1366px)"
+              srcset="/__spritemap#sprite-logo-view" width="130" height="26">
+            <source type="image/svg+xml" media="(min-width: 768px)"
+              srcset="/__spritemap#sprite-logo-view" width="110" height="22">
             <img class="logo" src="/__spritemap#sprite-logo-view" alt="Фитнес Центр Омск." width="100" height="20"
               draggable="false">
+          </picture>
         </div>
         <a class="header__phone-link" href="tel:88005555555" draggable="false">8 800 555-55-55</a>
       </header>
@@ -833,7 +839,14 @@
   <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <div class="footer__logo-container">
-        <img class="logo footer__logo" src="/__spritemap#sprite-logo-view" alt="Фитнес Центр Омск." width="100" height="20" draggable="false">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1366px)"
+            srcset="/__spritemap#sprite-logo-view" width="130" height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)"
+            srcset="/__spritemap#sprite-logo-view" width="110" height="22">
+          <img class="logo footer__logo" src="/__spritemap#sprite-logo-view" alt="Фитнес Центр Омск." width="100" height="20"
+            draggable="false">
+        </picture>
       </div>
       <nav class="footer__nav">
         <ul class="footer__nav-list">
