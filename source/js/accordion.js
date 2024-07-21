@@ -23,7 +23,7 @@ const onAccordionItemClick = (evt) => {
   const isActive = marker.classList.toggle('faq__details-list-marker--active');
   content.style.height = isActive ? `${content.scrollHeight}px` : '0';
 
-  if (isActive && window.innerWidth >= 1366) {
+  if (isActive && window.innerWidth >= 768) {
     item.style.paddingBottom = '16px';
   } else {
     item.style.paddingBottom = '0';

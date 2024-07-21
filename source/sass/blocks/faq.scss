@@ -225,6 +225,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    li {
+      padding-right: 45px;
+    }
+
     br {
       display: none;
     }
