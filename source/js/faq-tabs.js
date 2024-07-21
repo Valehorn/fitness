@@ -28,18 +28,14 @@ const onFaqTabButtonClick = (evt) => {
     return;
   }
 
-  const faqTabItem = buttonTarget.closest('.faq__tab-item');
-  const faqActiveTabItem = faqTabList.querySelector('.faq__tab-item--active');
-  const faqTabButton = faqActiveTabItem.querySelector('.faq__tab-button');
-  if (faqActiveTabItem && faqActiveTabItem !== faqTabItem) {
-    faqActiveTabItem.classList.remove('faq__tab-item--active');
+  const faqTabButton = faqTabList.querySelector('.faq__tab-button--active');
+
+  if (faqTabButton) {
     faqTabButton.classList.remove('faq__tab-button--active');
   }
 
-  if (!faqTabItem.classList.contains('faq__tab-item--active')) {
-    faqTabItem.classList.add('faq__tab-item--active');
-    buttonTarget.classList.add('faq__tab-button--active');
-  }
+  buttonTarget.classList.add('faq__tab-button--active');
+
   faqListChange(evt);
 };
 
