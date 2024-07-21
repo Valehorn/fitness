@@ -45,6 +45,10 @@
     margin: 0;
   }
 
+  span {
+    word-wrap: break-word;
+  }
+
   li:not(:has(div)) article {
     padding-top: 30px;
     padding-bottom: 37px;
@@ -179,6 +183,11 @@
       display: flex;
       gap: 15px;
     }
+
+    /* Переполнение */
+    li:has(div) div:first-of-type p {
+      max-width: 107px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -283,6 +292,14 @@
       max-width: $phone-width;
       padding-left: $phone-padding-x;
       padding-right: $phone-padding-x;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
     }
 
     li:nth-of-type(1),

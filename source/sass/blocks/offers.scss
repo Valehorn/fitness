@@ -59,6 +59,7 @@
   background-color: $bg-banners-color;
   color: $primary-white-color;
   text-align: center;
+  word-wrap: break-word;
   padding-top: 30px;
   padding-bottom: 36px;
 
@@ -73,6 +74,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
+    max-width: 100%;
     margin: 0;
     margin-bottom: 9px;
   }
@@ -86,6 +88,7 @@
   p {
     font-size: 16px;
     line-height: 20px;
+    max-width: 100%;
     margin: 0;
   }
 
