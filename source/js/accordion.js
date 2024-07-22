@@ -2,12 +2,13 @@ const faqDetailsListContainer = document.querySelector('.faq__details-lists-cont
 
 const faqListFirstItemFind = () => {
   const firstItem = document.querySelector('.faq__details-list li');
-  if (firstItem) {
-    const firstDescription = firstItem.querySelector('p');
-    const marker = firstItem.querySelector('.faq__details-list-marker');
-    if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
-      firstDescription.style.height = `${firstDescription.scrollHeight}px`;
-    }
+  if (!firstItem) {
+    return;
+  }
+  const firstDescription = firstItem.querySelector('p');
+  const marker = firstItem.querySelector('.faq__details-list-marker');
+  if (firstDescription && marker.classList.contains('faq__details-list-marker--active')) {
+    firstDescription.style.height = `${firstDescription.scrollHeight}px`;
   }
 };
 
@@ -37,9 +38,6 @@ const onAccordionItemKeydown = (evt) => {
 };
 
 const faqAccordionToggle = () => {
-  if (!faqDetailsListContainer) {
-    return;
-  }
   faqDetailsListContainer.addEventListener('click', onAccordionItemClick);
   faqDetailsListContainer.addEventListener('keydown', onAccordionItemKeydown);
 };

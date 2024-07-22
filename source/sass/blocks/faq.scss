@@ -175,6 +175,7 @@
     padding-right: 35px;
     cursor: pointer;
     margin-bottom: 41px;
+    transition: padding-bottom 0.5s ease;
   }
 
   li:last-of-type {
@@ -203,7 +204,7 @@
     height: 0;
     overflow: hidden;
     margin: 0;
-    transition: height 0.5s ease, padding-bottom 0.5s ease;
+    transition: height 0.5s ease;
   }
 
   li:first-child::before {
