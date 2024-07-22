@@ -172,8 +172,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -2px;
     background-image: linear-gradient(to right, #ed0233 13%, #003eb7 100%);
     opacity: 0;
     width: calc(100% + 4px);
