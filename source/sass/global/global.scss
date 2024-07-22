@@ -14,13 +14,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: $phone-width;
   font-family: $primary-font;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
-  min-height: 100%;
   color: $primary-dark-color;
+  min-width: $phone-width;
+  min-height: 100%;
   margin: 0;
 
   @media (min-width: $tablet-width) {

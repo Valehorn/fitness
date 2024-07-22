@@ -24,7 +24,7 @@ const validatePhone = () => {
   const phoneValue = form.querySelector('.form__phone').value;
   const phoneValidate = /^(?:\d[-\d]*){11}$/;
   if (!phoneValidate.test(phoneValue)) {
-    phoneError.textContent = 'Телефон не должен содержать буквы или символов отличных от "-", не меньше 11 цифр';
+    phoneError.textContent = 'Телефон не должен содержать буквы или символы отличные от "-" и быть не меньше 11 цифр';
     phoneError.style.display = 'block';
     phoneInput.classList.add('form__input--error');
     isValid = false;
@@ -34,7 +34,7 @@ const validatePhone = () => {
   }
 };
 
-const onValidateFormSubmit = (evt) => {
+const onFormSubmit = (evt) => {
   evt.preventDefault();
   isValid = true;
   validateName();
@@ -46,4 +46,4 @@ const onValidateFormSubmit = (evt) => {
   }
 };
 
-form.addEventListener('submit', onValidateFormSubmit);
+form.addEventListener('submit', onFormSubmit);
