@@ -7,7 +7,6 @@ const onCardHover = (evt) => {
   if (!card) {
     return;
   }
-
   card.classList.toggle('card--hover');
 };
 
