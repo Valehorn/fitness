@@ -119,6 +119,14 @@
   margin: 0;
   transition: opacity 0.5s ease;
 
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
+
+.contacts__link {
+  width: fit-content;
+
   &:hover,
   &:focus-visible {
     opacity: 0.7;
@@ -132,12 +140,8 @@
   &:active {
     opacity: 1;
   }
-
-  @media (min-width: $tablet-width) {
-    line-height: 22px;
-  }
 }
 
-.contacts__item-description--disabled {
+.contacts__link--disabled {
   opacity: 0.3;
 }
