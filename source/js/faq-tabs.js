@@ -28,10 +28,10 @@ const onFaqTabButtonClick = (evt) => {
     return;
   }
 
-  const faqTabButton = faqTabList.querySelector('.faq__tab-button--active');
+  const faqTabButtonActive = faqTabList.querySelector('.faq__tab-button--active');
 
-  if (faqTabButton) {
-    faqTabButton.classList.remove('faq__tab-button--active');
+  if (faqTabButtonActive) {
+    faqTabButtonActive.classList.remove('faq__tab-button--active');
   }
 
   buttonTarget.classList.add('faq__tab-button--active');
