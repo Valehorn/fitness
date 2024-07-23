@@ -360,8 +360,8 @@
   right: 0;
 }
 
-li:nth-of-type(1) .faq__details-list-marker-container,
-li:nth-of-type(2) .faq__details-list-marker-container {
+.faq__details-list li:nth-of-type(1) .faq__details-list-marker-container,
+.faq__details-list li:nth-of-type(2) .faq__details-list-marker-container {
   top: 4px;
 
   @media (min-width: $tablet-width) {
@@ -369,7 +369,7 @@ li:nth-of-type(2) .faq__details-list-marker-container {
   }
 }
 
-li:nth-of-type(3) .faq__details-list-marker-container {
+.faq__details-list li:nth-of-type(3) .faq__details-list-marker-container {
   top: 14px;
 
   @media (min-width: $tablet-width) {
@@ -377,7 +377,7 @@ li:nth-of-type(3) .faq__details-list-marker-container {
   }
 }
 
-li:nth-of-type(4) .faq__details-list-marker-container {
+.faq__details-list li:nth-of-type(4) .faq__details-list-marker-container {
   top: 14px;
 
   @media (min-width: $tablet-width) {
