@@ -96,6 +96,12 @@
   }
 }
 
+// Контейнер для более корректного переполнения на десктопе.
+
+.about__image-video-container {
+  position: relative;
+}
+
 .about__image-container {
   margin-bottom: 36px;
 
@@ -116,7 +122,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 10px;
+    bottom: auto;
+    left: 80px;
   }
 
   @media (max-width: $pre-tablet-width) {

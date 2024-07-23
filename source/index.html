@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фитнес центр SUPERGYM">
   <title>Fitness SUPERGYM</title>
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" type="font/woff2" as="font"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-light.woff2" type="font/woff2" as="font"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" type="font/woff2" as="font"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" type="font/woff2" as="font"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff2" type="font/woff2" as="font"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss" media="all">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="manifest.webmanifest">
@@ -28,10 +29,10 @@
       <header class="header">
         <div class="header__logo-container">
           <picture>
-            <source type="image/svg+xml" media="(min-width: 1366px)"
-              srcset="/__spritemap#sprite-logo-view" width="130" height="26">
-            <source type="image/svg+xml" media="(min-width: 768px)"
-              srcset="/__spritemap#sprite-logo-view" width="110" height="22">
+            <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo-view" width="130"
+              height="26">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-view" width="110"
+              height="22">
             <img class="logo" src="/__spritemap#sprite-logo-view" alt="Логотп SUPERGYM." width="100" height="20"
               draggable="false">
           </picture>
@@ -79,58 +80,60 @@
               есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
         </div>
-        <div class="about__image-container">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
-              width="660" height="400">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
-              width="678" height="345">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
-              width="660" height="400">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x" width="678"
-              height="345">
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x" width="320"
-              height="280">
-            <img class="about__image" src="img/about/about-main-img-phone@1x.jpg" alt="Тренажерный зал." width="320"
-              height="280" draggable="false">
-          </picture>
-        </div>
-        <div class="about__video-container">
-          <div class="about__video-plug">
-            <div class="about__video-plug-image-container">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/about/about-video-desktop@1x.webp 1x, img/about/about-video-desktop@2x.webp 2x"
-                  width="360" height="230">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/about/about-video-tablet@1x.webp 1x, img/about/about-video-tablet@2x.webp 2x" width="270"
-                  height="170">
-                <source type="image/png" media="(min-width: 1366px)"
-                  srcset="img/about/about-video-desktop@1x.png 1x, img/about/about-video-desktop@2x.png 2x" width="360"
-                  height="230">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="img/about/about-video-tablet@1x.png 1x, img/about/about-video-tablet@2x.png 2x" width="270"
-                  height="170">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/about/about-video-phone@1x.webp 1x, img/about/about-video-phone@2x.webp 2x" width="320"
-                  height="170">
-                <img class="about__video-image" src="img/about/about-video-phone@1x.png" alt="Картинка зала."
-                  width="320" height="170">
-              </picture>
-            </div>
-            <div class="about__button-play-container">
-              <button class="about__button-play" type="button">
-                <span class="visually-hidden">Кнопка проигрывателя.</span>
-              </button>
-            </div>
+        <div class="about__image-video-container container--phone-none">
+          <div class="about__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/about/about-main-img-desktop@1x.webp 1x, img/about/about-main-img-desktop@2x.webp 2x"
+                width="660" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/about/about-main-img-tablet@1x.webp 1x, img/about/about-main-img-tablet@2x.webp 2x"
+                width="678" height="345">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                srcset="img/about/about-main-img-desktop@1x.jpg 1x, img/about/about-main-img-desktop@2x.jpg 2x"
+                width="660" height="400">
+              <source type="image/jpeg" media="(min-width: 768px)"
+                srcset="img/about/about-main-img-tablet@1x.jpg 1x, img/about/about-main-img-tablet@2x.jpg 2x"
+                width="678" height="345">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/about/about-main-img-phone@1x.webp 1x, img/about/about-main-img-phone@2x.webp 2x"
+                width="320" height="280">
+              <img class="about__image" src="img/about/about-main-img-phone@1x.jpg" alt="Тренажерный зал." width="320"
+                height="280" draggable="false">
+            </picture>
           </div>
-          <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw" width="320" height="170"
-            allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
+          <div class="about__video-container">
+            <div class="about__video-plug">
+              <div class="about__video-plug-image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/about/about-video-desktop@1x.webp 1x, img/about/about-video-desktop@2x.webp 2x"
+                    width="360" height="230">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/about/about-video-tablet@1x.webp 1x, img/about/about-video-tablet@2x.webp 2x"
+                    width="270" height="170">
+                  <source type="image/png" media="(min-width: 1366px)"
+                    srcset="img/about/about-video-desktop@1x.png 1x, img/about/about-video-desktop@2x.png 2x"
+                    width="360" height="230">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/about/about-video-tablet@1x.png 1x, img/about/about-video-tablet@2x.png 2x" width="270"
+                    height="170">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/about/about-video-phone@1x.webp 1x, img/about/about-video-phone@2x.webp 2x" width="320"
+                    height="170">
+                  <img class="about__video-image" src="img/about/about-video-phone@1x.png" alt="Картинка зала."
+                    width="320" height="170">
+                </picture>
+              </div>
+              <div class="about__button-play-container">
+                <button class="about__button-play" type="button">
+                  <span class="visually-hidden">Кнопка проигрывателя.</span>
+                </button>
+              </div>
+            </div>
+            <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw" width="320" height="170"
+              allowfullscreen="" title="Omsk fitness mall video" loading="lazy"></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -216,8 +219,8 @@
               srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="378" height="348">
             <source type="image/webp" media="(max-width: 767px)"
               srcset="img/games/games-phone@1x.webp 1x, img/games/games-phone@2x.webp 2x" width="290" height="290">
-            <img class="games__image" src="img/games/games-phone@1x.jpg" alt="Мы научим вас взрывать лед."
-              width="290" height="290" draggable="false" loading="lazy">
+            <img class="games__image" src="img/games/games-phone@1x.jpg" alt="Мы научим вас взрывать лед." width="290"
+              height="290" draggable="false" loading="lazy">
           </picture>
         </div>
       </section>
@@ -638,7 +641,8 @@
                   <div class="faq__details-list-marker"></div>
                 </div>
                 <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                <p>Бесплатный месяц, скидка 20%. Можно приходить с членами семьи, желательно вашей, и друзьями - получите скидку в 1%</p>
+                <p>Бесплатный месяц, скидка 20%. Можно приходить с членами семьи, желательно вашей, и друзьями -
+                  получите скидку в 1%</p>
               </li>
             </ul>
             <ul class="faq__details-list" data-faq-list="services">
@@ -704,7 +708,8 @@
                   <div class="faq__details-list-marker"></div>
                 </div>
                 <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                <p>Нет, но в полне возможно, что после посещения зала понадобится мед. страховка - места мало, а тренажеры
+                <p>Нет, но в полне возможно, что после посещения зала понадобится мед. страховка - места мало, а
+                  тренажеры
                   включают в себя велосипеды. Обычные велосипеды.</p>
               </li>
             </ul>
@@ -840,12 +845,12 @@
     <div class="footer__container container">
       <div class="footer__logo-container">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1366px)"
-            srcset="/__spritemap#sprite-logo-view" width="130" height="26">
-          <source type="image/svg+xml" media="(min-width: 768px)"
-            srcset="/__spritemap#sprite-logo-view" width="110" height="22">
-          <img class="logo footer__logo" src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM." width="100" height="20"
-            draggable="false">
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo-view" width="130"
+            height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-view" width="110"
+            height="22">
+          <img class="logo footer__logo" src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM." width="100"
+            height="20" draggable="false">
         </picture>
       </div>
       <nav class="footer__nav">
