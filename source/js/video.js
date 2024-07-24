@@ -3,6 +3,8 @@ const videoPlug = document.querySelector('.about__video-plug');
 const playLink = document.querySelector('.about__button-play');
 const buttonContainer = document.querySelector('.about__button-play-container');
 
+//Если js не будет работать - about__button-play будет ссылкой.
+
 const replaceLinkToButton = () => {
   playLink.remove();
   const playButton = document.createElement('button');

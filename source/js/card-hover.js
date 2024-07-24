@@ -4,10 +4,9 @@ const onCardHover = (evt) => {
   const buttonTarget = evt.target.closest('.card__button');
   const card = buttonTarget ? buttonTarget.closest('.card') : null;
 
-  if (!card) {
-    return;
+  if (card) {
+    card.classList.toggle('card--hover');
   }
-  card.classList.toggle('card--hover');
 };
 
 const cardHover = () => {

@@ -12,10 +12,15 @@ const validateName = () => {
   if (!nameValidate.test(nameValue)) {
     nameError.textContent = 'Имя должно содержать только буквы и пробелы, а также начинаться с большой буквы.';
     nameError.style.display = 'block';
+    nameError.style.height = `${nameError.scrollHeight}px`;
+    nameError.style.marginTop = '11px';
     nameInput.classList.add('form__input--error');
     isValid = false;
   } else {
+    nameError.textContent = '';
     nameError.style.display = 'none';
+    nameError.style.height = '0';
+    nameError.style.marginTop = '0';
     nameInput.classList.remove('form__input--error');
   }
 };
@@ -26,10 +31,15 @@ const validatePhone = () => {
   if (!phoneValidate.test(phoneValue)) {
     phoneError.textContent = 'Телефон не должен содержать буквы или символы отличные от "-" и быть не меньше 11 цифр';
     phoneError.style.display = 'block';
+    phoneError.style.height = `${phoneError.scrollHeight}px`;
+    phoneError.style.marginTop = '11px';
     phoneInput.classList.add('form__input--error');
     isValid = false;
   } else {
+    phoneError.textContent = '';
     phoneError.style.display = 'none';
+    phoneError.style.height = '0';
+    phoneError.style.marginTop = '0';
     phoneInput.classList.remove('form__input--error');
   }
 };

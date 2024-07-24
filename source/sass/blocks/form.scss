@@ -123,7 +123,8 @@
   color: $form-error-color;
   width: 205px;
   margin: 0;
-  margin-top: 11px;
+  height: 0;
+  transition: height 1s ease;
 }
 
 .form__button {
