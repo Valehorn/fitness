@@ -13,8 +13,8 @@ const replaceLinkToButton = () => {
   buttonDescription.textContent = 'Кнопка проигрывателя';
   buttonDescription.classList.add('visually-hidden');
 
-  buttonContainer.append(playButton);
   playButton.append(buttonDescription);
+  buttonContainer.append(playButton);
 };
 
 const createIframe = () => {
