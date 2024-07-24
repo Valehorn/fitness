@@ -129,6 +129,10 @@
   width: 100%;
   pointer-events: none;
 
+  // Переполнение декоративного элемента карточки.
+  max-height: 270px;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
     font-size: 100px;
     line-height: 150px;
