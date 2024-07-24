@@ -166,10 +166,6 @@
   }
 }
 
-.about__video-plug--close {
-  display: none;
-}
-
 .about__video-image {
   display: block;
   width: 320px;
@@ -195,6 +191,7 @@
 
 .about__button-play {
   position: relative;
+  display: inline-block;
   width: 52px;
   height: 52px;
   border-radius: 100%;
@@ -308,7 +305,6 @@
 }
 
 .about__video {
-  display: none;
   border: 1px solid transparent;
 
   @media (min-width: $tablet-width) {
@@ -322,6 +318,3 @@
   }
 }
 
-.about__video--open {
-  display: block;
-}
