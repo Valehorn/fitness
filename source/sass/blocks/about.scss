@@ -304,6 +304,24 @@
   }
 }
 
+// Класс на случай, если about__button-play является ссылкой(не работающий js).
+
+.about__button-play--disabled {
+  background-image: none;
+  background-color: $primary-white-color;
+  opacity: 0.4;
+  cursor: none;
+  pointer-events: none;
+
+  &::before {
+    background-color: $primary-dark-color;
+  }
+
+  &::after {
+    border: 2px solid $primary-dark-color;
+  }
+}
+
 .about__video {
   border: 1px solid transparent;
 
