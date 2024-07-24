@@ -5,14 +5,14 @@ const priceTabs = [
     price3: '2700',
   },
   {
-    price1: '30000',
-    price2: '10200',
+    price1: '30 000',
+    price2: '10 200',
     price3: '16200',
   },
   {
-    price1: '60000',
-    price2: '20400',
-    price3: '32400',
+    price1: '60 000',
+    price2: '20 400',
+    price3: '32 400',
   },
 ];
 

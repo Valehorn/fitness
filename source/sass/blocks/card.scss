@@ -8,8 +8,8 @@
   background-color: $primary-white-color;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 290px;
   min-height: 384px;
 
@@ -164,9 +164,12 @@
 
 .card__button {
   position: relative;
-  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 206px;
   min-height: 66px;
-  padding: 25px 22px;
+  padding: 5px;
   transition: color 0.5s ease-in, border 0.5s ease-in;
 
   &::before {
@@ -210,17 +213,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-width: 250px;
-    padding: 5px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 230px;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 }
 
