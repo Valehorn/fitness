@@ -7,7 +7,7 @@ const priceTabs = [
   {
     price1: '30 000',
     price2: '10 200',
-    price3: '16200',
+    price3: '16 200',
   },
   {
     price1: '60 000',
