@@ -9,7 +9,7 @@ const replaceLinkToButton = () => {
   playLink.remove();
   const playButton = document.createElement('button');
   playButton.classList.add('about__button-play');
-  playButton.setAttribute('type', 'button');
+  playButton.type = 'button';
 
   const buttonDescription = document.createElement('span');
   buttonDescription.textContent = 'Кнопка проигрывателя';
@@ -23,12 +23,12 @@ const createIframe = () => {
   videoPlug.remove();
   const iframe = document.createElement('iframe');
   iframe.classList.add('about__video');
-  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw');
-  iframe.setAttribute('width', '320');
-  iframe.setAttribute('height', '170');
-  iframe.setAttribute('allowfullscreen', '');
-  iframe.setAttribute('title', 'Omsk fitness mall video');
-  iframe.setAttribute('loading', 'lazy');
+  iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw';
+  iframe.width = '320';
+  iframe.height = '170';
+  iframe.allowfullscreen = '';
+  iframe.title = 'Omsk fitness mall video';
+  iframe.loading = 'lazy';
 
   videoContainer.append(iframe);
 };
